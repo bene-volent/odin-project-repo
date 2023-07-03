@@ -51,19 +51,26 @@ h6 {
 }
 
 .container {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-inline: 5%;
 }
 @media (width > 375px) {
   .container {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-inline: 8%;
   }
 }
 @media (width > 768px) {
   .container {
-    width: min(1000px, 100% - 4rem);
-    margin-inline: auto;
+    margin-inline: 8%;
+  }
+}
+@media (width > 1024px) {
+  .container {
+    margin-inline: 15%;
+  }
+}
+@media (width > 2560px) {
+  .container {
+    margin-inline: 20%;
   }
 }
 
@@ -84,6 +91,10 @@ main {
 
 footer {
   grid-area: footer;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -163,12 +174,12 @@ main {
 .hero__heading {
   font-size: 1.75rem;
 }
-@media (width > 768px) {
+@media (width > 425px) {
   .hero__heading {
     font-size: 1.75rem;
   }
 }
-@media (width > 1024px) {
+@media (width > 1440px) {
   .hero__heading {
     font-size: 2rem;
   }
@@ -179,6 +190,11 @@ main {
 @media (width > 768px) {
   .hero__subtitle {
     font-size: 1.25rem;
+  }
+}
+@media (width > 1440px) {
+  .hero__subtitle {
+    font-size: 1.5rem;
   }
 }
 .hero__button {
@@ -215,12 +231,22 @@ main {
     width: 50%;
   }
 }
+@media (width > 1440px) {
+  .hero__button {
+    font-size: 1.25rem;
+  }
+}
+@media (width > 1440px) {
+  .hero__button {
+    font-size: 1.5rem;
+  }
+}
 .hero__img img {
   margin-inline: auto;
 }
 
 .projects {
-  --_card-width:320px;
+  --_card-width: 320px;
 }
 .projects__heading {
   font-size: 1.75rem;
@@ -236,20 +262,18 @@ main {
   gap: 2.5rem;
 }
 .projects__grid {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(var(--_card-width), 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.25rem;
 }
 
 .card {
   width: var(--_card-width);
+  flex-basis: var(--_card-width);
   background-color: #d7d7d7;
   border-radius: 0.5rem;
   overflow: hidden;
-}
-.card .place-holder {
-  background-color: hsl(0, 0%, 75%);
 }
 .card__image {
   width: 100%;
@@ -271,10 +295,6 @@ main {
   font-size: 1.5rem;
   color: #11141c;
 }
-.card__title.place-holder {
-  min-height: 1.5rem;
-  border-radius: 5px;
-}
 .card__link {
   font-weight: 700;
   font-size: 1rem;
@@ -289,9 +309,26 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.card__link__content.place-holder {
+
+.placeholder.card .place-holder {
+  background-color: hsla(0, 0%, 75%, 0.5);
+  animation: placeholder-pulse 1.5s linear infinite;
+}
+.placeholder.card .card__title.place-holder {
+  min-height: 1.5rem;
+  border-radius: 5px;
+}
+.placeholder.card .card__link__content.place-holder {
   min-height: 1rem;
   border-radius: 2px;
+}
+@keyframes placeholder-pulse {
+  from, to {
+    background-color: hsla(0, 0%, 75%, 0.5);
+  }
+  50% {
+    background-color: hsl(0, 0%, 75%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
