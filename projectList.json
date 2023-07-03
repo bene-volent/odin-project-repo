@@ -2,8 +2,8 @@
     "projects": [
         {
             "name": "Odin Recipes",
-            "link":"/projects/odin-recipes",
-            "img":"/projects/odin-recipes/capture.png",
+            "link":"./projects/odin-recipes/index.html",
+            "img":"./projects/odin-recipes/capture.png",
             "desc":"A small project to show to power of HTML"
         }
     ]
