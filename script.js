@@ -2,7 +2,7 @@
 function cardTemplate({name , link,img}) {
     return `<article class="card">
         <div class="card__image">
-            <img src="${img}" alt="Project ScreenShot"> 
+            <img src="${img}" loading="lazy" alt="Project ScreenShot"> 
         </div>
         <div class="card__content">
             <a href="#projects">
