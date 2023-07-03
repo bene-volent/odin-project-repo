@@ -246,7 +246,7 @@ main {
 }
 
 .projects {
-  --_card-width: 320px;
+  --_card-width: min(320px, 90%);
 }
 .projects__heading {
   font-size: 1.75rem;
@@ -329,6 +329,31 @@ main {
   50% {
     background-color: hsl(0, 0%, 75%);
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+.footer a {
+  cursor: pointer;
+  color: #11141c;
+  text-decoration-style: wavy;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 300ms;
+}
+.footer a:hover {
+  text-underline-offset: 0.5rem;
+}
+.footer a ion-icon {
+  font-size: 1.75rem;
 }
 
 /*# sourceMappingURL=style.css.map */

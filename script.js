@@ -8,7 +8,7 @@ function cardTemplate({name , link,img}) {
             <a href="#projects">
                 <h3 class="card__title">${name}</h3>
                 <span class="card__link">
-                    <span class="card__link__icon material-symbols-outlined"> link </span>
+                <ion-icon name="link-outline"></ion-icon>
                     <span class="card__link__content">${link}</span>
                 </span>
             </a>
@@ -24,8 +24,8 @@ function getCardPlaceholder() {
                     <a href="#projects">
                         <h3 class="card__title place-holder"></h3>
                         <span class="card__link">
-                            <span class="card__link__icon material-symbols-outlined"> link </span>
-                            <span class="card__link__content place-holder"></span>
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span class="card__link__content place-holder"></span>
                         </span>
                     </a>
                 </div>
