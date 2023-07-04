@@ -197,26 +197,48 @@ main {
     font-size: 1.5rem;
   }
 }
+.hero__btn_group {
+  display: grid;
+  gap: 0.875rem;
+}
+@media (width > 768px) {
+  .hero__btn_group {
+    grid-template-columns: auto auto;
+  }
+}
+@media (width > 1440px) {
+  .hero__btn_group {
+    max-width: 80%;
+  }
+}
 .hero__button {
   display: inline-block;
   position: relative;
-  padding: 1.25rem 2.5rem;
-  background: #3c4662;
+  width: 100%;
+  padding: 1.25rem;
   text-align: center;
   text-decoration: none;
-  color: #f9f9fb;
   transition: transform 200ms ease, box-shadow 200ms ease;
   border-radius: 0.5rem;
 }
+.hero__button--primary {
+  background: #3c4662;
+  color: #f9f9fb;
+  z-index: 2;
+}
+.hero__button--secondary {
+  background: #d7d7d7;
+  color: #11141c;
+  font-weight: 900;
+  z-index: 1;
+}
 .hero__button:active {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 1rem 0.75rem #3c4662;
 }
 @media (hover: hover) {
   .hero__button:hover {
-    transform: translateY(-5px);
-    outline: 1px solid #323a52;
-    outline-offset: 5px;
+    transform: translateY(-3px);
     box-shadow: 0 1rem 0.75rem #3c4662;
   }
 }
@@ -228,17 +250,11 @@ main {
 @media (width > 768px) {
   .hero__button {
     justify-self: start;
-    width: 50%;
   }
 }
 @media (width > 1440px) {
   .hero__button {
     font-size: 1.25rem;
-  }
-}
-@media (width > 1440px) {
-  .hero__button {
-    font-size: 1.5rem;
   }
 }
 .hero__img img {
@@ -286,6 +302,8 @@ main {
 }
 .card__image img {
   object-position: center center;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .card__content {

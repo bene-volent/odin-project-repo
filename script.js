@@ -2,10 +2,10 @@
 function cardTemplate({ name, link, img,desc }) {
     return `<article class="card">
         <div class="card__image">
-        <a  href="${link}"><img src="${img}" loading="lazy" alt="Project ScreenShot"> </a>
+        <a  href="${link}" target="_blank"><img src="${img}" loading="lazy" alt="Project ScreenShot"> </a>
         </div>
         <div class="card__content">
-            <a class="card__link" href="${link}">
+            <a class="card__link" target="_blank" href="${link}">
                 <ion-icon name="link-outline"></ion-icon>
                 <h3 class="card__title">${name}</h3>  
             </a>

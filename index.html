@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Odin Project - Repo</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body class="">
-    <header class="header">
-      <div class="container header__wrapper">
-        <img
-          class="header__image"
-          src="./odin-main-assets/logo.png"
-          alt="Benevolent"
-        />
-        <h2 class="header__title">Odin Projects List</h2>
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta http-equiv="content-security-policy" content="default-src https:" /> -->
+  <meta name="title" content="Odin Project List">
+  <meta name="description" content="This website is a collection of all the projects created during the course of The Odin Project. Starts from basic HTML to Backend Development [NodeJS]">
+  <meta name="keywords" content="The Odin Project, Web Development, Portfolio Projects, webdev, projects, frontend">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="author" content="Benevolent ( Raghav ) | Github : bene-volent">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+  <title>Odin Project - Repo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="">
+  <header class="header">
+    <div class="container header__wrapper">
+      <img class="header__image" src="./assets/img/logo.png" alt="Benevolent" />
+      <h2 class="header__title">Odin Projects List</h2>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero__wrapper">
+        <div class="hero__content">
+          <h1 class="hero__heading">
+            A collection of projects. <br />
+            The Odin Project Workbook
+          </h1>
+          <p class="hero__subtitle">
+            From HTML and CSS to React and Next.js:<br />
+            <strong style="text-transform: capitalize">A journey of frontend development mastery.</strong>
+          </p>
+          <div class="hero__btn_group">
+            <a href="#projects" class="btn hero__button hero__button--primary">Projects</a>
+            <a href="#socials" class="btn hero__button hero__button--secondary">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero__img">
+          <img src="./assets/img/code.png" alt="Code Snapshot" class="code" />
+        </div>
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container hero__wrapper">
-          <div class="hero__content">
-            <h1 class="hero__heading">
-              A collection of projects. <br />
-              The Odin Project Workbook
-            </h1>
-            <p class="hero__subtitle">
-              From HTML and CSS to React and Next.js:<br />
-              <strong style="text-transform: capitalize"
-                >A journey of frontend development mastery.</strong
-              >
-            </p>
-            <a href="#projects" class="btn hero__button">Projects</a>
-          </div>
-
-          <div class="hero__img">
-            <img
-              src="./odin-main-assets/code.png"
-              alt="Code Snapshot"
-              class="code"
-            />
-          </div>
-        </div>
-      </section>
-      <section id="projects" class="projects">
-        <div class="container">
-          <div class="projects__wrapper">
-            <h2 class="projects__heading">My Projects</h2>
-            <div class="projects__grid"></div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer >
+    </section>
+    <section id="projects" class="projects">
       <div class="container">
-        <div class="footer">
-          <a href="https://github.com/bene-volent/">
-            <ion-icon name="logo-github"></ion-icon>Benevolent</a
-          >
-          <a href="https://www.linkedin.com/in/raghv-r/">
-            <ion-icon name="logo-linkedin"></ion-icon>Raghav
-          </a>
+        <div class="projects__wrapper">
+          <h2 class="projects__heading">My Projects</h2>
+          <div class="projects__grid"></div>
         </div>
       </div>
-    </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div id="socials" class="footer">
+        <a href="https://github.com/bene-volent/">
+          <ion-icon name="logo-github"></ion-icon>Benevolent</a>
+        <a href="https://www.linkedin.com/in/raghv-r/">
+          <ion-icon name="logo-linkedin"></ion-icon>Raghav
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
-    <script type="module" src="./script.js"></script>
-  </body>
+  <script type="module" src="./script.js"></script>
+</body>
+
 </html>
