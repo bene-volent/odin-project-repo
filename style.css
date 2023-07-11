@@ -151,6 +151,9 @@ main {
   gap: 2.5rem;
 }
 
+.hero {
+  margin-block: 5rem;
+}
 .hero__wrapper {
   display: grid;
   gap: 2.5rem;
@@ -290,6 +293,7 @@ main {
   background-color: #d7d7d7;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 0 5px 1rem rgba(60, 70, 98, 0.4666666667);
 }
 .card__image {
   width: 100%;

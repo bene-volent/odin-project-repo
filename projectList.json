@@ -1,8 +1,15 @@
 {
     "projects": [
+        
+        {
+            "name": "The Capybara Team",
+            "link":"./projects/capybara-portfolio/",
+            "img":"./projects/capybara-portfolio/capture.png",
+            "desc":"A team of capybaras who love to create."
+        },
         {
             "name": "Odin Recipes",
-            "link":"./projects/odin-recipes/index.html",
+            "link":"./projects/odin-recipes/",
             "img":"./projects/odin-recipes/capture.png",
             "desc":"A small project to show to power of HTML"
         }

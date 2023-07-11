@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/logo-icon.png">
+    
+    <title>The Capybara Team</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <dialog class="modal">
+        <div class="dialog-content">
+            <p>This page is not responsive. Best viewed on desktop</p>
+            <p>I wanted to follow the course and use minimum css that is not taught until now.</p>
+        </div>
+        <p>Press the <strong>Button</strong> or press <strong>Esc</strong> to close the modal</p>
+        <button class="btn" onclick="modal.close()">Close</button>
+    </dialog>
+    <main>
+        <section class="hero-section" id="main">
+            <div class="container">
+                <header class="hero-header">
+                    <img class="logo" src="./assets/logo.jpg" alt="The Capybara Team Logo">
+                    <h2 class="title">The Capybara Team</h2>
+                </header>
+                <div class="hero-content">
+                    <h1 class="hero__heading">A team of capybaras who love to create.</h1>
+                    <p class="hero__secondary">Meet the Capybara Team, a group of talented and creative capybaras who
+                        love to design, develop, and deliver creative solutions.</p>
+                    <a href="#cta" class="btn cta__btn cta__btn--hero">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+        <section class="team-section" id="team">
+            <div class="container">
+                <div class="team-section--wrapper">
+                    <h2 class="team__heading">Meet Our Team</h2>
+                    <div class="team">
+                        <div class="team__member">
+                            <img src="./assets/team/carlos.jpg" alt="Carlos CEO" class="team__member_image">
+                            <h3 class="team__member_name">Carlos Capybara</h3>
+                            <p class="team__member_position">Cheif Executive Officer</p>
+                        </div>
+                        <div class="team__member">
+                            <img src="./assets/team/cappuccino.jpg" alt="Cappuccino Creative Director"
+                                class="team__member_image">
+                            <h3 class="team__member_name">Cappuccino Capybara</h3>
+                            <p class="team__member_position">Creative Director</p>
+                        </div>
+                        <div class="team__member">
+                            <img src="./assets/team/dev.jpg" alt="Dev Capybara" class="team__member_image">
+                            <h3 class="team__member_name">Dev Capybara</h3>
+                            <p class="team__member_position">Lead Developer</p>
+                        </div>
+                        <div class="team__member">
+                            <img src="./assets/team/perry.jpg" alt="Perry The Capybara" class="team__member_image">
+                            <h3 class="team__member_name">Perry The Capybara</h3>
+                            <p class="team__member_position">Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quote-section" id="quote">
+            <div class="container">
+                <div class="quote-wrapper">
+                    <p class="quote">"Don't be afraid to dream big. If you can imagine it, you can create it. So go out
+                        there and make your dreams a reality. Dream big, capybara!"</p>
+                    <span class="credit"> - Carlos, CEO</span>
+                </div>
+            </div>
+        </section>
+        <section class="cta-section" id="cta">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="cta-content">
+                        <h3 class="cta-heading">Let's work together to create something amazing!</h3>
+                        <p class="cta-secondary">Schedule a meeting with us by clicking on the button</p>
+                    </div>
+                    <a href="#" class="btn cta__btn">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer><span>&copy; Copyright. <a href="https://github.com/bene-volent" target="_blank">Bene-volent</a> 2023</span>
+    </footer>
+    <script>
+        const modal = document.querySelector("dialog")
+        modal.showModal()
+    </script>
+</body>
+
+</html>

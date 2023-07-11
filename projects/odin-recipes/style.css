@@ -1,0 +1,13 @@
+        
+img{max-width: 100%;}
+body{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.container{
+    width:min(calc(100% - 2rem),800px);
+    margin-inline:auto;
+    
+}
