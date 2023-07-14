@@ -29,6 +29,10 @@ function generateCPUMove() { return Math.ceil(Math.random() * 3) }
 
 
 function showRules() {
+    if (document.querySelector(".rules".classList.contains("active"))){
+        hideRules()
+        return;
+    }
     document.querySelector(".rules").classList.add("active")
 }
 function hideRules() {
