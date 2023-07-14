@@ -2,6 +2,11 @@
     "projects": [
         
         {
+            "name": "Rock Paper Scissors",
+            "link":"./projects/rock-paper-scissors",
+            "img":"./projects/rock-paper-scissors/capture.png",
+            "desc":"A game of Rock Paper Scissors | Design by Frontend Mentor."
+        },{
             "name": "The Capybara Team",
             "link":"./projects/capybara-portfolio/",
             "img":"./projects/capybara-portfolio/capture.png",
