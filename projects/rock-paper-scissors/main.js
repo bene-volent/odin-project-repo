@@ -29,7 +29,7 @@ function generateCPUMove() { return Math.ceil(Math.random() * 3) }
 
 
 function showRules() {
-    if (document.querySelector(".rules".classList.contains("active"))){
+    if (document.querySelector(".rules").classList.contains("active")){
         hideRules()
         return;
     }
