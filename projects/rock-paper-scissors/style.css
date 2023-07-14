@@ -427,7 +427,7 @@ main {
 .result:not([data-result=""]) {
   opacity: 1;
   transform: translateY(-10px);
-  transition: opacity 1s ease-in-out, transform 1s 4s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s 0s ease-in-out;
 }
 .result__text {
   color: #fff;
