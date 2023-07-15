@@ -38,7 +38,7 @@
     <header>
       <div class="container">
         <div class="header__wrapper">
-          <img class="header__logo" src="./images/logo.svg" alt="Logo">
+          <h1><img class="header__logo" src="./images/logo.svg" alt="Logo"></h1>
           <div class="header__score_wrapper">
             <p class="header__score_title">
               SCORE
@@ -51,7 +51,7 @@
       </div>
     </header>
 
-    <section class="game" data-state="">
+    <div class="game" data-state="">
       <div class="container">
         <div class="game__wrapper">
           <div class="game__text">
@@ -74,8 +74,8 @@
 
       </div>
 
-    </section>
-    <section class="controls">
+    </div>
+    <div class="controls">
       <div class="result" data-result="">
         <p class="result__text">You <span class="result__span">won</span></p>
         <button class="btn btn--hover result__newBtn" onclick="replayGame()">Play again</button>
@@ -83,14 +83,14 @@
       <button class="btn btn--hover game__rules_open" onclick="showRules()">
         Rules
       </button>
-    </section>
-    <section class="rules">
+    </div>
+    <div class="rules">
       <h2 class="rules__heading">RULES</h2>
       <img src="./images/image-rules.svg" alt="Game Rules" class="rules__img">
       <button class="btn  rules__close" onclick="hideRules()">
         <img src="./images/icon-close.svg" alt="Close Rules">
       </button>
-    </section>
+    </div>
 
   </main>
 

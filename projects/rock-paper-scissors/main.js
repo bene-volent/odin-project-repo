@@ -1,7 +1,7 @@
 let playerChoice;
 let computerChoice;
 
-let game = document.querySelector("section.game")
+let game = document.querySelector(".game")
 let gameWindow = game.querySelector(".game__window")
 let resultElement = document.querySelector(".result")
 let score = document.querySelector(".header__score")
@@ -29,7 +29,7 @@ function generateCPUMove() { return Math.ceil(Math.random() * 3) }
 
 
 function showRules() {
-    if (document.querySelector(".rules".classList.contains("active"))){
+    if (document.querySelector(".rules").classList.contains("active")){
         hideRules()
         return;
     }
