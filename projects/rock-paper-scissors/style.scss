@@ -428,9 +428,10 @@ main {
         }
 
         &__btn.won::before{
-            opacity: 1;
-            scale: 1;
-            transition: scale 350ms 1s ease-in-out ;
+            // opacity: 1;
+            animation: win-btn-shadow 5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+            // scale: 1;
+            // transition: scale 350ms 1s ease-in-out ;
 
         }
 
@@ -462,6 +463,17 @@ main {
 
     }
 
+}
+
+@keyframes win-btn-shadow {
+    0%,100%{
+        opacity: 0;
+        scale: 0;
+    }
+    50%{
+        opacity:1;
+        scale: 1;
+    }
 }
 
 @keyframes player-reveal {
@@ -560,7 +572,7 @@ main {
 
         opacity: 1;
         transform: translateY(-10px);
-        transition: opacity 1s ease-in-out,transform 1s 4s ease-in-out;
+        transition: opacity 1s ease-in-out,transform 0.75s ease-in-out;
     }
 
     
