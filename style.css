@@ -187,6 +187,31 @@ main {
     font-size: 2rem;
   }
 }
+.hero__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: inherit;
+  text-decoration: none;
+  width: max-content;
+  position: relative;
+}
+.hero__link ion-icon {
+  rotate: 90deg;
+}
+.hero__link::before {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 2ch;
+  height: 0.2rem;
+  background-color: #11141c;
+  transform-origin: left center;
+  scale: 0 1;
+  transition: scale 350ms ease-in-out;
+}
+.hero__link:hover::before {
+  scale: 1 1;
+}
 .hero__subtitle {
   font-size: 1rem;
 }
