@@ -14,7 +14,7 @@ let choices = ["Rock", "Paper", "Scissor"]
 
 function evaluteReult(player, cpu) {
 
-    // Tie Conditions [ 0 ]  : (Player - Computer + 3) % 3 =  0 |   [ (x - x + 3) % 3 = 3 ] 
+    // Tie Conditions [ 0 ]  : (Player - Computer + 3) % 3 =  0 |   [ (x - x + 3) % 3 = 0 ] 
     // Win Conditions [ 1 ]  : (Player - Computer + 3) % 3 =  1 |   [ 1. (x + 1 - x + 3) % 3 = 1 || 2. (1 - 3 + 3) % 3 = 1 [Rock , Scissor] ]
     // Loss Conditions[ 2 ]  : (Player - Computer + 3) % 3 =  2 |   [ 1. (x - 1 - x + 3) % 3 = 2 || 2. (3 - 1 + 3) % 3 = 2 [Scissor , Rock] ]
 
@@ -49,6 +49,8 @@ document.querySelectorAll(".game__btn").forEach((button) => {
         button.dataset.select = 'player'
         playerChoice = parseInt(button.dataset.value)
         computerChoice = generateCPUMove()
+
+        // Creating Clone in case computer choose same Button
         let cpuButton = document.querySelector(`.game__btn[data-value="${computerChoice}"`).cloneNode(true)
         // console.log(computerChoice,cpuButton)
         cpuButton.classList.add("game__btn--clone")
@@ -56,6 +58,8 @@ document.querySelectorAll(".game__btn").forEach((button) => {
         console.log(computerChoice)
         gameWindow.append(cpuButton)
 
+        // Creating a timeout effect to let css animations to end
+        
         const timeOut = setTimeout(() => {
             switch (evaluteReult(playerChoice, computerChoice)) {
                 case 0:
@@ -91,6 +95,8 @@ function replayGame(){
     const clone = (gameWindow.querySelector(".game__btn--clone"))
     const player = (gameWindow.querySelector("[data-select='player'"))
 
+    // Clear Game states from window,player and remove the cpu clone button.
+    
     player.classList.remove('won')
     player.dataset.select=''
     game.dataset.state=""
