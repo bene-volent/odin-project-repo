@@ -14,7 +14,7 @@ let choices = ["Rock", "Paper", "Scissor"]
 
 function evaluteReult(player, cpu) {
 
-    // Tie Conditions [ 0 ]  : (Player - Computer + 3) % 3 =  0 |   [ (x - x + 3) % 3 = 3 ] 
+    // Tie Conditions [ 0 ]  : (Player - Computer + 3) % 3 =  0 |   [ (x - x + 3) % 3 = 0 ] 
     // Win Conditions [ 1 ]  : (Player - Computer + 3) % 3 =  1 |   [ 1. (x + 1 - x + 3) % 3 = 1 || 2. (1 - 3 + 3) % 3 = 1 [Rock , Scissor] ]
     // Loss Conditions[ 2 ]  : (Player - Computer + 3) % 3 =  2 |   [ 1. (x - 1 - x + 3) % 3 = 2 || 2. (3 - 1 + 3) % 3 = 2 [Scissor , Rock] ]
 
