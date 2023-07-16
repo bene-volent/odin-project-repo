@@ -127,6 +127,7 @@ body {
   border-radius: 3px;
   border: 1px solid var(--primary);
   cursor: pointer;
+  user-select:none;
 }
 .calculator .input__btn::before {
   content: "";
