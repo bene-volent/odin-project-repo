@@ -1,6 +1,11 @@
 {
     "projects": [
-        
+        {
+            "name": "Etch A Sketch",
+            "link":"./projects/etch-a-sketch/",
+            "img":"./projects/etch-a-sketch/capture.png",
+            "desc":"A Pixel Sketch app to bring you imagination to life."
+        },
         {
             "name": "Rock Paper Scissors",
             "link":"./projects/rock-paper-scissors/",

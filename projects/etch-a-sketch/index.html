@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/png">
+</head>
+
+<body class="dark">
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <h1>Etch A Sketch</h1>
+                <button aria-label="Toggle Color" class="toggle__color" data-state="off">
+                    <span class="material-symbols-outlined"> dark_mode </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="sketch">
+            <div class="container">
+                <div class="sketch__wrapper">
+                    <p class="sketch__color_tooltip">Current Color : <span>Black</span></p>
+                    <div class="sketch__area">
+                        <div class="sizes">
+                            <h2>Sizes</h2>
+                            <div class="sketch__buttons">
+                                <button class="controls__button" data-size="16">16</button>
+                                <button class="controls__button" data-size="32">32</button>
+                                <button class="controls__button" data-size="48">48</button>
+                            </div>
+                        </div>
+                        <div class="sketch__grid"></div>
+                        <div class="colors">
+                            <h2>Colors</h2>
+                            <div class="sketch__buttons">
+                                <button class="controls__button" data-clr="black">
+                                    Black
+                                </button>
+                                <button class="controls__button" data-clr="rainbow">
+                                    Rainbow
+                                </button>
+                                <button class="controls__button" data-clr="grayscale">
+                                    Gray
+                                </button>
+                                <input type="color" name="colorPicker" id="colorPicker" class="controls__button" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sketch__controls">
+                        <button class="controls__button" id="clearButton">Clear</button>
+                        <button class="controls__button" id="creditsButton">Credits</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="credits">
+            <header class="credits__header">
+                <img src="./assets/logo.png" alt="Benevolent Logo">
+                <h2>Benevolent</h2>
+            </header>
+            <main class="credits__socials">
+                <a href="https://linkedin.com/in/raghv-r" target="_blank">
+                    <i class="devicon-linkedin-plain"></i>
+                </a>
+                <a href="https://github.com/bene-volent" target="_blank">
+                    <i class="devicon-github-original"></i>
+                </a>
+            </main>
+            <footer class="credits__footer">
+                <p><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> | Foundation</p>
+            </footer>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
