@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator | Odin Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <main class="calculator">
+      <div class="calculator__body">
+        <div class="calculator__screen">
+          <p class="prevCalc"></p>
+          <p class="currentCalc"></p>
+        </div>
+        <div class="calculator__inputs">
+          <button class="input__btn" data-type="clear" data-value="CE">
+            CE
+          </button>
+          <button class="input__btn" data-type="clear" data-value="backspace">
+            <span class="material-symbols-outlined"> backspace </span>
+          </button>
+          <button class="input__btn" data-type="operator" data-value="pow2">
+            <span>x<sup>2</sup></span>
+          </button>
+          <button class="input__btn" data-type="operator" data-value="sqrt">
+            <span>&#8730;x</span>
+          </button>
+          <button class="input__btn" data-type="number" data-value="7">
+            7
+          </button>
+          <button class="input__btn" data-type="number" data-value="8">
+            8
+          </button>
+          <button class="input__btn" data-type="number" data-value="9">
+            9
+          </button>
+          <button class="input__btn" data-type="operator" data-value="/">
+            &divide;
+          </button>
+          <button class="input__btn" data-type="number" data-value="4">
+            4
+          </button>
+          <button class="input__btn" data-type="number" data-value="5">
+            5
+          </button>
+          <button class="input__btn" data-type="number" data-value="6">
+            6
+          </button>
+          <button class="input__btn" data-type="operator" data-value="*">
+            &times;
+          </button>
+          <button class="input__btn" data-type="number" data-value="1">
+            1
+          </button>
+          <button class="input__btn" data-type="number" data-value="2">
+            2
+          </button>
+          <button class="input__btn" data-type="number" data-value="3">
+            3
+          </button>
+          <button class="input__btn" data-type="operator" data-value="-">
+            &minus;
+          </button>
+          <button class="input__btn" data-type="sign" data-value="neg">
+            &plusmn;
+          </button>
+          <button class="input__btn" data-type="number" data-value="0">
+            0
+          </button>
+          <button class="input__btn" data-type="dot" data-value=".">
+            &#8231; 
+        </button>
+          <button class="input__btn" data-type="operator" data-value="+">
+            &plus;
+          </button>
+          <button class="input__btn" data-type="eval" data-value="equal">
+            &equals;
+          </button>
+        </div>
+      </div>
+    </main>
+    <script  src="./main.js"></script>
+  </body>
+</html>

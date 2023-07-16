@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap");
+@font-face {
+  font-family: "casio";
+  src: url("./assets/fonts/casio-fx-115es-plus.ttf");
+}
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+:root {
+  --ff-btn: "Martian Mono", monospace;
+  --ff-screen: "casio"
+      --text: #161718;
+  --background: #f4f5f5;
+  --primary: #9b9692;
+  --secondary: #dfdfdd;
+  --accent: #7d7374;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100dvh;
+  background-color: var(--background);
+}
+
+.calculator {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  min-width: 22rem;
+  border: 2px solid var(--accent);
+  border-radius: 16px;
+  background: linear-gradient(145deg, #efefec, #c9c9c7);
+  box-shadow: 20px 20px 40px #a5a5a4, -20px -20px 40px #ffffff;
+}
+.calculator__body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: var(--secondary);
+}
+.calculator__screen {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-family: "casio";
+  background-color: var(--accent);
+  color: var(--background);
+  padding: 0.33rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.calculator__screen .prevCalc {
+  height: 2rem;
+  font-size: 1.25rem;
+  text-align: end;
+  border-bottom: 1px solid var(--primary);
+}
+.calculator__screen .currentCalc {
+  height: 4rem;
+  font-size: 2rem;
+  text-align: end;
+}
+.calculator__inputs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 0.25rem;
+  gap: 2px;
+  font-family: var(--ff-btn);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.calculator .input__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.25rem;
+  aspect-ratio: 1/1;
+  border-radius: 3px;
+  border: 1px solid var(--primary);
+}
+.calculator .input__btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 3px 3px hsla(0, 0%, 0%, 0.2);
+  opacity: 0;
+}
+.calculator .input__btn:active::before {
+  opacity: 1;
+}
+.calculator .input__btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 -3px 3px hsla(0, 0%, 0%, 0.2);
+  opacity: 1;
+}
+.calculator .input__btn:active::after {
+  opacity: 0;
+}
+.calculator .input__btn[data-type=eval] {
+  aspect-ratio: 4/1;
+  grid-column: 1/-1;
+}
+
+/*# sourceMappingURL=style.css.map */
