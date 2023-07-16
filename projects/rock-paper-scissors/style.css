@@ -253,6 +253,8 @@ main {
   display: inline-block;
   z-index: 3;
   width: 40%;
+    user-select:none;
+  
 }
 .game__btn::before {
   content: "";
