@@ -149,7 +149,8 @@ body {
 }
 .sketch__controls {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10%;
 }
 
 .controls__button {
@@ -170,6 +171,10 @@ body {
 .colors .controls__button[data-clr=black] {
   background-color: black;
   color: #e2e2e2;
+}
+.colors .controls__button[data-clr=erase] {
+  background-color: #fff;
+  color: #111;
 }
 .colors .controls__button[data-clr=rainbow] {
   background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);

@@ -106,8 +106,11 @@ function drawOnPixel(event) {
         case "colorPicker":
             const colorPicker = document.getElementById("colorPicker")
             btn.style.backgroundColor = colorPicker.value;
+            
             break;
-
+        case "erase":
+            btn.style.backgroundColor ="#fff";
+            break;
     }
 
 
@@ -128,6 +131,8 @@ function setColor(btn) {
 
     if (btn.id === "colorPicker")
         currentClr = "colorPicker"
+
+
 
     const colorTooltip = document.querySelector('.sketch__color_tooltip span')
     colorTooltip.textContent = currentClr;

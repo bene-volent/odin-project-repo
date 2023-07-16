@@ -198,7 +198,8 @@ body {
 
     &__controls {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 10%;
     }
 
 }
@@ -228,6 +229,11 @@ body {
     &[data-clr='black'] {
         background-color: black;
         color: #e2e2e2;
+    }
+
+    &[data-clr='erase'] {
+        background-color: #fff;
+        color: #111;
     }
 
     &[data-clr='rainbow'] {
