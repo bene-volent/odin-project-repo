@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "name": "Calculator",
+            "link":"./projects/calculator/",
+            "img":"./projects/calculator/capture.png",
+            "desc":"The simple, yet powerful tool for your everyday calculations."
+        },
+        {
             "name": "Etch A Sketch",
             "link":"./projects/etch-a-sketch/",
             "img":"./projects/etch-a-sketch/capture.png",
