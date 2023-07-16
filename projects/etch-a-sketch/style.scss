@@ -161,7 +161,7 @@ body {
     }
 
     &__grid {
-
+        cursor:crosshair;
         display: grid;
         grid-template-columns: repeat(var(--size, 16), 1fr);
         grid-template-rows: repeat(var(--size, 16), 1fr);
