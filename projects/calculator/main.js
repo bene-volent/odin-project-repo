@@ -45,7 +45,7 @@ function getScreenNumber() {
 function inputNumber(number) {
     if (isScreenFull()) return;
 
-    if (isScreenEmpty() || currentScreen.textContent == 0) { currentScreen.textContent = number; return }
+    if (isScreenEmpty() || currentScreen.textContent === "0") { currentScreen.textContent = number; return }
 
     currentScreen.textContent += number
 
@@ -83,10 +83,10 @@ function handleOperand(enteredOperand) {
     clearCurrentScreen();
 }
 function squareNumber() {
-    currentScreen.textContent = square(getScreenNumber()).toPrecision(4)
+    currentScreen.textContent = square(getScreenNumber()).toPrecision(5)
 }
 function sqrtNumber() {
-    currentScreen.textContent = sqrt(getScreenNumber()).toPrecision(4)
+    currentScreen.textContent = sqrt(getScreenNumber()).toPrecision(5)
 }
 
 function add(a, b) {
@@ -138,7 +138,7 @@ function calculate() {
 }
 
 function evaluate() {
-    return calculate().toPrecision(4).toString();
+    return calculate().toPrecision(5).toString();
 }
 
 function handleEvaluate() {
