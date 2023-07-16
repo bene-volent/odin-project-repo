@@ -256,6 +256,8 @@ backspace.addEventListener("click", () => { handleBackspace() })
 equal.addEventListener("click", () => { handleEvaluate() })
 //equal.addEventListener("touchstart", () => { handleEvaluate() })
 
+sign.addEventListener("click",()=>{changeSign()})
+
 decimal.addEventListener("click", () => {
     addDecimal()
 })
