@@ -202,9 +202,9 @@ numBtns.forEach(numberButton => {
     numberButton.addEventListener('click', () => {
         inputNumber(numberButton.dataset.value)
     })
-    numberButton.addEventListener('touchstart', () => {
-        inputNumber(numberButton.dataset.value)
-    })
+  //  numberButton.addEventListener('touchstart', () => {
+//       inputNumber(numberButton.dataset.value)
+//    })
 })
 
 operators.forEach((operator) => {
@@ -227,39 +227,39 @@ operators.forEach((operator) => {
         }
     }
     )
-    operator.addEventListener('touchstart', () => {
-        switch (operator.dataset.value) {
-            case '+':
-            case '-':
-            case '*':
-            case '/':
-                handleOperand(operator.dataset.value);
-                break;
-
-            case "pow2":
-                squareNumber()
-                break;
-            case "sqrt":
-                sqrtNumber();
-                break;
-        }
-    }
-    )
+    //operator.addEventListener('touchstart', () => {
+   //     switch (operator.dataset.value) {
+   //         case '+':
+     //       case '-':
+     //       case '*':
+     //       case '/':
+      //          handleOperand(operator.dataset.value);
+       ///         break;
+//
+      //      case "pow2":
+       //         squareNumber()
+       //         break;
+      //      case "sqrt":
+      //          sqrtNumber();
+      //          break;
+       // }
+   // }
+   // )
 })
 
 clearAll.addEventListener('click', () => { handleClearAll() })
-clearAll.addEventListener('touchstart', () => { handleClearAll() })
+//clearAll.addEventListener('touchstart', () => { handleClearAll() })
 
 backspace.addEventListener("click", () => { handleBackspace() })
-backspace.addEventListener("touchstart", () => { handleBackspace() })
+//backspace.addEventListener("touchstart", () => { handleBackspace() })
 
 equal.addEventListener("click", () => { handleEvaluate() })
-equal.addEventListener("touchstart", () => { handleEvaluate() })
+//equal.addEventListener("touchstart", () => { handleEvaluate() })
 
 decimal.addEventListener("click", () => {
     addDecimal()
 })
-decimal.addEventListener("touchstart", () => {
-    addDecimal()
-})
+//decimal.addEventListener("touchstart", () => {
+ //   addDecimal()
+//})
 
