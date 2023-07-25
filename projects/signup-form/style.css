@@ -146,8 +146,6 @@ body {
   display: grid;
   grid-template-areas: "pile";
   align-items: center;
-  -webkit-animation: from-up 1s ease;
-  animation: from-up 1s ease;
 }
 .banner > * {
   grid-area: pile;
@@ -212,8 +210,6 @@ body {
   padding: var(--size-8);
   background-color: hsl(0, 0%, 100%);
   align-items: center;
-  -webkit-animation: from-below 1s ease;
-  animation: from-below 1s ease;
 }
 .signin__text * + * {
   margin-top: var(--size-3);

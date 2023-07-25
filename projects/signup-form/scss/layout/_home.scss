@@ -29,9 +29,6 @@ body {
     grid-template-areas: "pile";
     align-items: center;
 
-    -webkit-animation: from-up 1s ease;
-
-            animation: from-up 1s ease;
 
     >* {
         grid-area: pile;
@@ -129,8 +126,7 @@ body {
         // @include mq() {
         //     padding: var(--size-20) var(--size-8);
         // }
-        -webkit-animation: from-below 1s ease;
-                animation: from-below 1s ease;
+
     }
 
     &__text {
