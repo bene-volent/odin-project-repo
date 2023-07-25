@@ -156,6 +156,11 @@ body {
   height: 100%;
   max-height: 100dvh;
   width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
   -o-object-position: center;
   object-position: center;
   -o-object-fit: cover;
@@ -236,7 +241,7 @@ body {
   background-color: hsl(11, 40%, 42%);
   width: 200px;
   justify-self: end;
-  box-shadow: 0.2rem 0.2rem 0.5rem hsl(11, 40%, 60%);
+  box-shadow: 0.2rem 0.2rem 0.5rem hsla(11, 40%, 42%, 0.7);
 }
 @media (min-width: 1200px) {
   .form .signin__button {
