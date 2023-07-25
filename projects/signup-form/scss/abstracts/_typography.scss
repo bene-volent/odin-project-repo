@@ -1,0 +1,36 @@
+$ff-poppins: 'Poppins', sans-serif;
+$ff-raleways: 'Raleway', sans-serif;
+
+
+
+$fs-900: 3.75rem;
+$fs-800: 2.25rem;
+$fs-700: 1.75rem;
+$fs-600: 1.125rem;
+$fs-500: 1.125rem;
+$fs-400: 1rem;
+$fs-300: 0.925rem;
+$fs-200: 0.875rem;
+$fs-200: 0.75rem;
+
+
+
+
+$fs-large-900: 3.75rem;
+$fs-large-800: 3rem;
+$fs-large-700: 1.75rem;
+$fs-large-600: 1.3125rem;
+$fs-large-500: 1.125rem;
+$fs-large-400: 1rem;
+$fs-large-300: 0.925rem;
+$fs-large-200: 0.875rem;
+$fs-large-200: 0.75rem;
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    :active {
+        color: inherit;
+    }
+}

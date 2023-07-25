@@ -1,0 +1,32 @@
+:root{
+    @for $i from 1 through 24{
+        --size-#{$i}:calc(0.25rem * #{$i});
+    }
+}
+
+:root {
+    --size-1:calc(0.25rem * 1);
+    --size-2:calc(0.25rem * 2);
+    --size-3:calc(0.25rem * 3);
+    --size-4:calc(0.25rem * 4);
+    --size-5:calc(0.25rem * 5);
+    --size-6:calc(0.25rem * 6);
+    --size-7:calc(0.25rem * 7);
+    --size-8:calc(0.25rem * 8);
+    --size-9:calc(0.25rem * 9);
+    --size-10:calc(0.25rem * 10);
+    --size-11:calc(0.25rem * 11);
+    --size-12:calc(0.25rem * 12);
+    --size-13:calc(0.25rem * 13);
+    --size-14:calc(0.25rem * 14);
+    --size-15:calc(0.25rem * 15);
+    --size-16:calc(0.25rem * 16);
+    --size-17:calc(0.25rem * 17);
+    --size-18:calc(0.25rem * 18);
+    --size-19:calc(0.25rem * 19);
+    --size-20:calc(0.25rem * 20);
+    --size-21:calc(0.25rem * 21);
+    --size-22:calc(0.25rem * 22);
+    --size-23:calc(0.25rem * 23);
+    --size-24:calc(0.25rem * 24);
+  }

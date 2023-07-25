@@ -1,0 +1,5 @@
+@mixin mq($breakpoint:800px){
+    @media (min-width:$breakpoint) {
+        @content;
+    }
+}

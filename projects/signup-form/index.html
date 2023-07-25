@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/png">
+    <title>Benevolent Tourism - Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <section class="signin">
+            <div class="banner">
+                <picture class="banner__img_container"><img src="./assets/img/banner.jpg" alt="banner"
+                        class="banner__img" /></picture>
+                <div class="banner__content">
+                    <img src="./assets/img/logo.png" alt="Logo" class="banner__logo" />
+                    <div class="banner__text">
+                        <h1 class="banner__heading">Benevolent Tourism</h1>
+                        <p class="banner__subheading">A Benevolent Group Company</p>
+                    </div>
+                </div>
+                <a href="#signinForm" class="banner__nextPage">&#8681;</a>
+            </div>
+            <div id="signinForm" class="signin__container">
+                <div class="signin__text">
+                    <h2 class="signin__heading">Create a new account</h2>
+                    <p class="signin__subheading">Connect with us to have a beautiful adventure</p>
+                </div>
+                <form class="form">
+                    <div class="input__box">
+                        <input type="text" name="fname" id="fname" class="input__input" placeholder="First Name" required />
+                        <label for="fname" class="input__label" data-tip="Are you a Science Experiment">First
+                            Name</label>
+                    </div>
+                    <div class="input__box">
+                        <input type="text" name="lname" id="lname" class="input__input" placeholder="Last Name"  />
+                        <label for="lname" class="input__label" data-tip="Trying to be fancy?">Last Name</label>
+                    </div>
+                    <div class="input__box">
+                        <input type="email" name="email" id="email" class="input__input" placeholder="E-mail" required />
+                        <label for="email" class="input__label" data-tip="Enter your personal email">E-mail</label>
+                    </div>
+                    <div class="input__box">
+                        <input type="tel" name="contact" id="contact" class="input__input" placeholder="Contact Number"  />
+                        <label for="contact" class="input__label" data-tip="e.g. +91-6196325871">Contact Number</label>
+                    </div>
+
+                    <div class="input__box">
+                        <input type="password" name="password" id="password" class="input__input" placeholder="New Password" required />
+                        <label for="password" class="input__label" data-tip="Strengthen your password">New
+                            Password</label>
+                        <div class="password__suggestion">
+                            <div class="password__strength-meter" data-value="0">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                            <ol class="password__strength-list">
+                                <li class="strength">Contains one Uppercase Letter</li>
+                                <li class="strength">Contains one Lowercase Letter</li>
+                                <li class="strength">Contains one Numerical Digit</li>
+                                <li class="strength">Contains one Symbol</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="input__box">
+                        <input type="password" id="confirmPassword" class="input__input" placeholder="Confirm Password"
+                            required />
+                        <label for="confirmPassword" class="input__label" data-tip="Enter the same password">Confirm
+                            Password</label>
+                    </div>
+                    <button type="submit" class="signin__button">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
