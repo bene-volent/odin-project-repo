@@ -164,7 +164,7 @@ body {
   grid-area: stack;
 }
 .banner-img {
-  height: calc(100vh - var(--_margin) * 2);
+  height: calc(100dvh - var(--_margin) * 2);
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
