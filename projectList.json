@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "name": "Better Decor",
+            "link":"./projects/signup-form/",
+            "img":"./projects/signup-form/capture.png",
+            "desc":"Make your home your sanctuary."
+        },
+        {
             "name": "Calculator",
             "link":"./projects/calculator/",
             "img":"./projects/calculator/capture.png",

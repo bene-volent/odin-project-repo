@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Decor | Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+
+
+<body>
+
+    <main>
+        <section class="signup" data-mobile-form-active="false">
+            <div class="banner">
+                <img src="./assets/banner.jpg" alt="banner" class="banner-img">
+                <div class="banner-content">
+                    <h1 class="banner-heading"><span class="material-symbols-outlined heading-icon">
+                            home
+                        </span>
+
+                        Better Decor</h1>
+                    <p class="banner-subheading">Better Decor helps to make you home appeal to the ones you want to
+                        impress</p>
+                </div>
+                <button type="button" class="mobile-only banner-formButton">Sign Up</button>
+            </div>
+
+
+            <div class="main">
+                <div class="main-content">
+                    <h2 class="main-heading"><span class="material-symbols-outlined heading-icon">
+                            home
+                        </span>
+
+                        Better Decor</h2>
+                    <p class="main-text">Create an account to connect with us!</p>
+                </div>
+                <form class="form">
+                    <div class="form-group">
+                        <input type="text" pattern="([A-Za-z]+\.?\s?)+" id="name" name="name" class="form-input"
+                            placeholder="Name" required>
+                        <label for="name" class="form-label" data-tooltip="Only letters allowed">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-input" placeholder="E-mail" required>
+                        <label for="email" class="form-label" data-tooltip="Check the email again?">E-mail</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" name="password" class="form-input" placeholder="Password"
+                            required>
+                        <label for="password" class="form-label"
+                            data-tooltip="Check the strength suggestions.">Password</label>
+                        <ul class="password-hint-container">
+                            <li class="password-hint" data-mask="1">Must have 8 characters</li>
+                            <li class="password-hint" data-mask="2">Must have one Uppercase Letter</li>
+                            <li class="password-hint" data-mask="4">Must have one lowercase Letter</li>
+                            <li class="password-hint" data-mask="8">Must have one Digit</li>
+                            <li class="password-hint" data-mask="16">Must have one Symbol</li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-input"
+                            placeholder="Confirm Password" required>
+                        <label for="confirmPassword" class="form-label" data-tooltip="Enter the same password">Confirm
+                            Password</label>
+                    </div>
+                    <button class="form-submit" type="submit" data-submitted="false"><span class="form-submit-text">Sign Up</span><span
+                            class="material-symbols-outlined form-submit-done">
+                            done
+                        </span></button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="./main.js">        </script>
+</body>
+
+</html>
