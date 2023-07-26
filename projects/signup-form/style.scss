@@ -375,6 +375,7 @@ body {
 
     @include mq() {
         max-width: 400px;
+        @include from-below();
     }
 
 }
