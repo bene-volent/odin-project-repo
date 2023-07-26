@@ -1,12 +1,6 @@
 {
     "projects": [
         {
-            "name": "Bene's Tourism",
-            "link":"./projects/signup-form/",
-            "img":"./projects/signup-form/capture.png",
-            "desc":"Sign Up page for Benevolent Tourism."
-        },
-        {
             "name": "Calculator",
             "link":"./projects/calculator/",
             "img":"./projects/calculator/capture.png",
