@@ -1,0 +1,331 @@
+/***** CSS Reset *****/
+/*
+    Josh's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+    */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.button,
+[type=button],
+button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/***** End CSS Reset *****/
+/***** CSS variables *****/
+:root {
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-7: 1.75rem;
+  --size-8: 2rem;
+  --size-9: 2.25rem;
+  --size-10: 2.5rem;
+  --size-11: 2.75rem;
+  --size-12: 3rem;
+  --size-13: 3.25rem;
+  --size-14: 3.5rem;
+  --size-15: 3.75rem;
+  --size-16: 4rem;
+  --size-17: 4.25rem;
+  --size-18: 4.5rem;
+  --size-19: 4.75rem;
+  --size-20: 5rem;
+  --size-21: 5.25rem;
+  --size-22: 5.5rem;
+  --size-23: 5.75rem;
+  --size-24: 6rem;
+  --size-25: 6.25rem;
+  --size-26: 6.5rem;
+  --size-27: 6.75rem;
+  --size-28: 7rem;
+  --size-29: 7.25rem;
+  --size-30: 7.5rem;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: linear-gradient(45deg, #8ccc6e 0%, #078a93 71.48%);
+}
+
+.body-wrapper {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(60.5px);
+  backdrop-filter: blur(60.5px);
+}
+
+.container {
+  --_container-padding: var(--size-8);
+  --_container-max-width: 1280px;
+}
+
+.container {
+  width: min(100% - var(--_container-padding), var(--_container-max-width));
+  margin-inline: auto;
+}
+
+.header {
+  padding-block: var(--size-2);
+  color: #fff;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--size-2);
+}
+.header-menu span {
+  font-size: var(--size-8);
+}
+.header-heading {
+  font-size: var(--size-8);
+}
+.header-options {
+  --_element-height: var(--size-10);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: var(--size-4);
+  font-size: calc(var(--_element-height) / 2);
+}
+.header-search-form {
+  --_height: var(--_element-height);
+  --_half-height: calc(var(--_height) / 2);
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+.header-search {
+  height: var(--_height);
+  border-radius: var(--_half-height);
+  border: none;
+  padding: var(--_half-height);
+  width: calc(100vw - 2 * var(--_height));
+  outline: none;
+  display: none;
+}
+.header-search-close {
+  display: none;
+  width: var(--_height);
+  aspect-ratio: 1;
+}
+.header-search-text {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  translate: 0 -50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--_height);
+  aspect-ratio: 1/1;
+  border-radius: var(--_half-height);
+  background-color: #efefef;
+}
+.header-options-end {
+  display: flex;
+  gap: var(--size-4);
+  align-items: center;
+}
+.header-bell {
+  height: var(--_element-height);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1333333333);
+}
+.header[header-showSearch] .header-wrapper {
+  justify-content: center;
+}
+.header[header-showSearch] .header-options-end {
+  display: none;
+}
+.header[header-showSearch] .header-logo {
+  display: none;
+}
+.header[header-showSearch] .header-search {
+  display: inline;
+}
+.header[header-showSearch] .header-search-close {
+  display: flex;
+}
+.header-profile {
+  border-radius: 50%;
+  width: var(--_element-height);
+}
+
+.menu {
+  position: fixed;
+  z-index: 5;
+  inset: 0 0 auto 0;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: var(--size-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  background: hsl(184, 91%, 30%);
+  translate: -100% 0;
+  transition: translate 350ms ease;
+}
+.menu-container > * + * {
+  margin-top: var(--size-4);
+}
+.menu-close {
+  position: absolute;
+  top: var(--size-4);
+  left: var(--size-4);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1333333333);
+  padding: var(--size-2);
+}
+.menu-close span {
+  font-size: var(--size-8);
+}
+.menu-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-8);
+  font-size: var(--size-8);
+}
+.menu-logo-image {
+  width: min(30%, 100px);
+}
+.menu-menu {
+  padding: var(--size-4);
+  position: relative;
+  --_options-height-scale: 25%;
+  isolation: isolate;
+}
+.menu-menu::after {
+  content: "";
+  position: absolute;
+  background-color: #ddd;
+  inset: 0 auto auto 0;
+  border-bottom-right-radius: var(--size-5);
+  border-top-right-radius: var(--size-5);
+  height: var(--_options-height-scale);
+  width: 2rem;
+  transform: translateX(calc(-1 * var(--size-6)));
+  translate: 0 0%;
+  z-index: 0;
+  transition: translate 350ms ease;
+}
+.menu-menu[data-active-link="1"]::after {
+  translate: 0 calc(0 * 100%);
+}
+.menu-menu[data-active-link="2"]::after {
+  translate: 0 calc(1 * 100%);
+}
+.menu-menu[data-active-link="3"]::after {
+  translate: 0 calc(2 * 100%);
+}
+.menu-menu[data-active-link="4"]::after {
+  translate: 0 calc(3 * 100%);
+}
+.menu-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-8);
+}
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: var(--size-4);
+}
+.menu-settings {
+  display: flex;
+  align-items: center;
+  gap: var(--size-4);
+  padding: var(--size-4);
+}
+.menu[data-status=open] {
+  translate: 0 0;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
