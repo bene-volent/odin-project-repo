@@ -1,0 +1,33 @@
+{
+    "projects": [
+        {
+            "name": "Better Decor",
+            "link":"https://odinprojects-bene.vercel.app/projects/signup-form/",
+            "img":"./assets/projects/signup.png",
+            "desc":"Make your home your sanctuary."
+        },
+        {
+            "name": "Calculator",
+            "link":"https://odinprojects-bene.vercel.app/projects/calculator/",
+            "img":"./assets/projects/calculator.png",
+            "desc":"The simple, yet powerful tool for your everyday calculations."
+        },
+        {
+            "name": "Etch A Sketch",
+            "link":"https://odinprojects-bene.vercel.app/projects/etch-a-sketch/",
+            "img":"./assets/projects/etch-a-sketch.png",
+            "desc":"A Pixel Sketch app to bring you imagination to life."
+        },
+        {
+            "name": "Rock Paper Scissors",
+            "link":"https://odinprojects-bene.vercel.app/projects/rock-paper-scissors/",
+            "img":"./assets/projects/rockpaperscissors.png",
+            "desc":"A game of Rock Paper Scissors | Design by Frontend Mentor."
+        },{
+            "name": "The Capybara Team",
+            "link":"https://odinprojects-bene.vercel.app/projects/capybara-portfolio/",
+            "img":"./assets/projects/capybara-portfolio.png",
+            "desc":"A team of capybaras who love to create."
+        }
+    ]
+}

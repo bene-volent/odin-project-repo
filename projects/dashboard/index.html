@@ -1,113 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Odin Project Dashboard</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Odin Project Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-    <div class="body-wrapper">
-        <div class="menu" data-status=" ">
-            <button class="menu-close button mobile-only"><span class="material-symbols-outlined">close</span></button>
-            <div class="menu-container">
-                <div class="menu-logo">
-                    <img src="./assets/odin.png" alt="Odin Project" class="menu-logo-image">
-                    <h2 class="menu-header">The Odin Project</h2>
-                </div>
-                <nav class="menu-menu" data-active-link="4">
-                    <ul class="menu-list">
-                        <li class="menu-item" data-link="1"><a href="#" class="menu-link"><svg xmlns="http://www.w3.org/2000/svg"
-                                    stroke="white" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                    <rect x="8.33325" y="10.4166" width="33.3333" height="10.4167" rx="1" stroke-width="4"
-                                        stroke-linejoin="round" />
-                                    <rect x="8.33325" y="29.1666" width="33.3333" height="10.4167" rx="1" stroke-width="4"
-                                        stroke-linejoin="round" />
-                                </svg> <span class="menu-link-title">Menu</span></a></li>
-                        <li class="menu-item" data-link="2"><a href="#" class="menu-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
-                                    stroke="white" fill="none">
-                                    <rect x="8.33325" y="12.5" width="33.3333" height="25" rx="2" stroke-width="4" />
-                                    <path
-                                        d="M8.33325 18.75L24.1055 26.6361C24.6685 26.9176 25.3313 26.9176 25.8943 26.6361L41.6666 18.75"
-                                        stroke-width="4" />
-                                </svg>
-                                <span class="menu-link-title">
-                                    Messages
-                                </span>
-                            </a></li>
-                        <li class="menu-item" data-link="3"><a href="#" class="menu-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
-                                    fill="white">
-                                    <path
-                                        d="M32.4844 6.30664C30.5841 4.25488 27.9298 3.125 25.0001 3.125C22.0548 3.125 19.3917 4.24805 17.5001 6.28711C15.588 8.34863 14.6563 11.1504 14.8751 14.1758C15.3087 20.1445 19.8507 25 25.0001 25C30.1495 25 34.6837 20.1455 35.1241 14.1777C35.3458 11.1797 34.4083 8.38379 32.4844 6.30664ZM42.1876 46.875H7.81257C7.36263 46.8809 6.91705 46.7863 6.50824 46.5983C6.09943 46.4103 5.73767 46.1335 5.44929 45.7881C4.81452 45.0293 4.55866 43.9932 4.74812 42.9453C5.57234 38.373 8.1446 34.5322 12.1876 31.8359C15.7794 29.4424 20.3292 28.125 25.0001 28.125C29.671 28.125 34.2208 29.4434 37.8126 31.8359C41.8555 34.5312 44.4278 38.3721 45.252 42.9443C45.4415 43.9922 45.1856 45.0283 44.5508 45.7871C44.2626 46.1327 43.9008 46.4097 43.492 46.5979C43.0832 46.7861 42.6376 46.8807 42.1876 46.875Z" />
-                                </svg>
-                                <span class="menu-link-title">
-                                    Profile
-                                </span>
-                            </a></li>
-                        <li class="menu-item" data-link="4"><a href="#" class="menu-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
-                                    fill="white">
-                                    <path
-                                        d="M39.0625 6.25H31.25C31.25 2.80273 28.4473 0 25 0C21.5527 0 18.75 2.80273 18.75 6.25H10.9375C8.34961 6.25 6.25 8.34961 6.25 10.9375V45.3125C6.25 47.9004 8.34961 50 10.9375 50H39.0625C41.6504 50 43.75 47.9004 43.75 45.3125V10.9375C43.75 8.34961 41.6504 6.25 39.0625 6.25ZM15.625 41.4062C14.3262 41.4062 13.2812 40.3613 13.2812 39.0625C13.2812 37.7637 14.3262 36.7188 15.625 36.7188C16.9238 36.7188 17.9688 37.7637 17.9688 39.0625C17.9688 40.3613 16.9238 41.4062 15.625 41.4062ZM15.625 32.0312C14.3262 32.0312 13.2812 30.9863 13.2812 29.6875C13.2812 28.3887 14.3262 27.3438 15.625 27.3438C16.9238 27.3438 17.9688 28.3887 17.9688 29.6875C17.9688 30.9863 16.9238 32.0312 15.625 32.0312ZM15.625 22.6562C14.3262 22.6562 13.2812 21.6113 13.2812 20.3125C13.2812 19.0137 14.3262 17.9688 15.625 17.9688C16.9238 17.9688 17.9688 19.0137 17.9688 20.3125C17.9688 21.6113 16.9238 22.6562 15.625 22.6562ZM25 3.90625C26.2988 3.90625 27.3438 4.95117 27.3438 6.25C27.3438 7.54883 26.2988 8.59375 25 8.59375C23.7012 8.59375 22.6562 7.54883 22.6562 6.25C22.6562 4.95117 23.7012 3.90625 25 3.90625ZM37.5 39.8438C37.5 40.2734 37.1484 40.625 36.7188 40.625H22.6562C22.2266 40.625 21.875 40.2734 21.875 39.8438V38.2812C21.875 37.8516 22.2266 37.5 22.6562 37.5H36.7188C37.1484 37.5 37.5 37.8516 37.5 38.2812V39.8438ZM37.5 30.4688C37.5 30.8984 37.1484 31.25 36.7188 31.25H22.6562C22.2266 31.25 21.875 30.8984 21.875 30.4688V28.9062C21.875 28.4766 22.2266 28.125 22.6562 28.125H36.7188C37.1484 28.125 37.5 28.4766 37.5 28.9062V30.4688ZM37.5 21.0938C37.5 21.5234 37.1484 21.875 36.7188 21.875H22.6562C22.2266 21.875 21.875 21.5234 21.875 21.0938V19.5312C21.875 19.1016 22.2266 18.75 22.6562 18.75H36.7188C37.1484 18.75 37.5 19.1016 37.5 19.5312V21.0938Z" />
-                                </svg>
-                                <span class="menu-link-title">Projects</span>
-                            </a></li>
-                    </ul>
-                </nav>
-            </div>
-            <a href="#" class="menu-settings">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="white">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M29.3468 5.96772V5.96774L29.6636 9.13572C29.827 10.7693 29.9087 11.586 30.4615 11.815C31.0143 12.044 31.6496 11.5242 32.9202 10.4846L35.3843 8.46857C36.05 7.92386 36.3829 7.6515 36.7677 7.67069C37.1526 7.68989 37.4567 7.99401 38.065 8.60227L41.3978 11.9351C42.0061 12.5434 42.3102 12.8475 42.3294 13.2323C42.3486 13.6172 42.0762 13.9501 41.5315 14.6158L39.5154 17.08C38.4758 18.3505 37.9561 18.9858 38.185 19.5387C38.414 20.0915 39.2308 20.1731 40.8643 20.3365L44.0324 20.6533C44.8884 20.7389 45.3163 20.7817 45.5749 21.0674C45.8334 21.3531 45.8334 21.7832 45.8334 22.6434V27.3568C45.8334 28.217 45.8334 28.6471 45.5749 28.9328C45.3163 29.2185 44.8884 29.2613 44.0324 29.3468L40.8651 29.6636C39.2316 29.8269 38.4148 29.9086 38.1858 30.4614C37.9568 31.0142 38.4766 31.6495 39.5162 32.9201L41.5316 35.3834C42.0763 36.0492 42.3487 36.3821 42.3295 36.7669C42.3103 37.1517 42.0062 37.4559 41.3979 38.0641L38.0651 41.397C37.4568 42.0052 37.1527 42.3094 36.7678 42.3285C36.383 42.3477 36.0501 42.0754 35.3844 41.5307L32.9203 39.5146C31.6497 38.475 31.0144 37.9552 30.4616 38.1842C29.9088 38.4132 29.8271 39.23 29.6637 40.8635L29.3468 44.0324C29.2613 44.8884 29.2185 45.3163 28.9328 45.5749C28.6471 45.8334 28.217 45.8334 27.3568 45.8334H22.6434C21.7832 45.8334 21.3531 45.8334 21.0674 45.5749C20.7817 45.3163 20.7389 44.8884 20.6533 44.0324L20.3365 40.8643C20.1732 39.2308 20.0915 38.414 19.5387 38.185C18.9858 37.9561 18.3506 38.4759 17.08 39.5154L14.6157 41.5316C13.95 42.0763 13.6171 42.3487 13.2323 42.3295C12.8474 42.3103 12.5433 42.0062 11.935 41.3979L8.60217 38.0651C7.99392 37.4568 7.68979 37.1527 7.6706 36.7678C7.6514 36.383 7.92376 36.0501 8.46847 35.3844L10.4846 32.9202C11.5242 31.6496 12.044 31.0143 11.815 30.4615C11.586 29.9087 10.7692 29.827 9.13571 29.6636L5.96774 29.3468H5.96772C5.1118 29.2612 4.68384 29.2185 4.4253 28.9328C4.16675 28.6471 4.16675 28.217 4.16675 27.3568V22.6434C4.16675 21.7832 4.16675 21.3531 4.4253 21.0674C4.68384 20.7817 5.1118 20.7389 5.96772 20.6533H5.96774L9.13649 20.3364C10.77 20.1731 11.5868 20.0914 11.8158 19.5386C12.0448 18.9858 11.525 18.3505 10.4854 17.0799L8.46857 14.6149C7.92386 13.9491 7.6515 13.6162 7.6707 13.2314C7.68989 12.8466 7.99402 12.5424 8.60227 11.9342L11.9351 8.60132C12.5434 7.99307 12.8475 7.68894 13.2324 7.66975C13.6172 7.65056 13.9501 7.92291 14.6158 8.46762L17.0801 10.4838C18.3506 11.5234 18.9859 12.0432 19.5388 11.8142C20.0916 11.5852 20.1732 10.7684 20.3366 9.1349L20.6533 5.96774V5.96772C20.7389 5.1118 20.7817 4.68384 21.0674 4.4253C21.3531 4.16675 21.7832 4.16675 22.6434 4.16675H27.3568C28.217 4.16675 28.6471 4.16675 28.9328 4.4253C29.2185 4.68384 29.2613 5.1118 29.3468 5.96772ZM25.0001 33.3334C29.6025 33.3334 33.3334 29.6025 33.3334 25.0001C33.3334 20.3977 29.6025 16.6667 25.0001 16.6667C20.3977 16.6667 16.6668 20.3977 16.6668 25.0001C16.6668 29.6025 20.3977 33.3334 25.0001 33.3334Z" />
-                </svg>
-             <span class="menu-link-title">Setting</span></a>
-
-        </div>
-        <header class="header">
-            <div class="container">
-                <div class="header-wrapper">
-                    <div class="header-logo">
-                        <button class="button header-menu mobile-only"><span class="material-symbols-outlined">
-                                menu
-                            </span></button>
-                        <h1 class="header-heading">Projects</h1>
+    <body>
+        <div class="body-wrapper">
+            <div class="menu" data-status=" ">
+                <button class="menu-close button mobile-only"><span class="material-symbols-outlined">close</span></button>
+                <div class="menu-container">
+                    <div class="menu-logo">
+                        <img src="./assets/odin.png" alt="Odin Project" class="menu-logo-image" />
+                        <h2 class="menu-heading">The Odin Project</h2>
                     </div>
-                    <div class="header-options">
-                        <form class="header-search-form">
-                            <button type="button" class="header-search-close"><span
-                                    class="material-symbols-outlined">close</span></button> </button>
-                            <input type="text" name="search" id="header-search" class="header-search"><label
-                                for="header-search" class="header-search-text"><span class="material-symbols-outlined">
-                                    search
-                                </span></label>
-                            <button type="submit" class="sr-only">search</button>
-                        </form>
-                        <div class="header-options-end">
-                            <button class="button header-bell"><span class="material-symbols-outlined">
-                                    notifications
+                    <nav class="menu-menu" data-active-link="1">
+                        <!-- 1. Projects -->
+                        <!-- 2. Messages -->
+                        <!-- 3. Stats -->
+                        <!-- 4. Profile -->
+                        <ul class="menu-list">
+                            <li class="menu-item" data-link="1">
+                                <a href="#" class="menu-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="white">
+                                        <path
+                                            d="M39.0625 6.25H31.25C31.25 2.80273 28.4473 0 25 0C21.5527 0 18.75 2.80273 18.75 6.25H10.9375C8.34961 6.25 6.25 8.34961 6.25 10.9375V45.3125C6.25 47.9004 8.34961 50 10.9375 50H39.0625C41.6504 50 43.75 47.9004 43.75 45.3125V10.9375C43.75 8.34961 41.6504 6.25 39.0625 6.25ZM15.625 41.4062C14.3262 41.4062 13.2812 40.3613 13.2812 39.0625C13.2812 37.7637 14.3262 36.7188 15.625 36.7188C16.9238 36.7188 17.9688 37.7637 17.9688 39.0625C17.9688 40.3613 16.9238 41.4062 15.625 41.4062ZM15.625 32.0312C14.3262 32.0312 13.2812 30.9863 13.2812 29.6875C13.2812 28.3887 14.3262 27.3438 15.625 27.3438C16.9238 27.3438 17.9688 28.3887 17.9688 29.6875C17.9688 30.9863 16.9238 32.0312 15.625 32.0312ZM15.625 22.6562C14.3262 22.6562 13.2812 21.6113 13.2812 20.3125C13.2812 19.0137 14.3262 17.9688 15.625 17.9688C16.9238 17.9688 17.9688 19.0137 17.9688 20.3125C17.9688 21.6113 16.9238 22.6562 15.625 22.6562ZM25 3.90625C26.2988 3.90625 27.3438 4.95117 27.3438 6.25C27.3438 7.54883 26.2988 8.59375 25 8.59375C23.7012 8.59375 22.6562 7.54883 22.6562 6.25C22.6562 4.95117 23.7012 3.90625 25 3.90625ZM37.5 39.8438C37.5 40.2734 37.1484 40.625 36.7188 40.625H22.6562C22.2266 40.625 21.875 40.2734 21.875 39.8438V38.2812C21.875 37.8516 22.2266 37.5 22.6562 37.5H36.7188C37.1484 37.5 37.5 37.8516 37.5 38.2812V39.8438ZM37.5 30.4688C37.5 30.8984 37.1484 31.25 36.7188 31.25H22.6562C22.2266 31.25 21.875 30.8984 21.875 30.4688V28.9062C21.875 28.4766 22.2266 28.125 22.6562 28.125H36.7188C37.1484 28.125 37.5 28.4766 37.5 28.9062V30.4688ZM37.5 21.0938C37.5 21.5234 37.1484 21.875 36.7188 21.875H22.6562C22.2266 21.875 21.875 21.5234 21.875 21.0938V19.5312C21.875 19.1016 22.2266 18.75 22.6562 18.75H36.7188C37.1484 18.75 37.5 19.1016 37.5 19.5312V21.0938Z"
+                                        />
+                                    </svg>
+                                    <span class="menu-link-title">Projects</span>
+                                </a>
+                            </li>
+                            <li class="menu-item" data-link="2">
+                                <a href="#" class="menu-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="white" fill="none">
+                                        <rect x="8.33325" y="12.5" width="33.3333" height="25" rx="2" stroke-width="4" />
+                                        <path d="M8.33325 18.75L24.1055 26.6361C24.6685 26.9176 25.3313 26.9176 25.8943 26.6361L41.6666 18.75" stroke-width="4" />
+                                    </svg>
+                                    <span class="menu-link-title">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item" data-link="3">
+                                <a href="#" class="menu-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="white" fill="none">
+                                        <rect x="38.5" y="14.5834" width="8.33333" height="27.0833" rx="1" stroke-width="4" stroke-linejoin="round" />
+                                        <rect x="21.8333" y="27.0834" width="8.33333" height="14.5833" rx="1" stroke-width="4" stroke-linejoin="round" />
+                                        <rect x="5.16675" y="18.75" width="8.33333" height="22.9167" rx="1" stroke-width="4" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="menu-link-title">Stats</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item" data-link="4">
+                                <a href="#" class="menu-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="white">
+                                        <path
+                                            d="M32.4844 6.30664C30.5841 4.25488 27.9298 3.125 25.0001 3.125C22.0548 3.125 19.3917 4.24805 17.5001 6.28711C15.588 8.34863 14.6563 11.1504 14.8751 14.1758C15.3087 20.1445 19.8507 25 25.0001 25C30.1495 25 34.6837 20.1455 35.1241 14.1777C35.3458 11.1797 34.4083 8.38379 32.4844 6.30664ZM42.1876 46.875H7.81257C7.36263 46.8809 6.91705 46.7863 6.50824 46.5983C6.09943 46.4103 5.73767 46.1335 5.44929 45.7881C4.81452 45.0293 4.55866 43.9932 4.74812 42.9453C5.57234 38.373 8.1446 34.5322 12.1876 31.8359C15.7794 29.4424 20.3292 28.125 25.0001 28.125C29.671 28.125 34.2208 29.4434 37.8126 31.8359C41.8555 34.5312 44.4278 38.3721 45.252 42.9443C45.4415 43.9922 45.1856 45.0283 44.5508 45.7871C44.2626 46.1327 43.9008 46.4097 43.492 46.5979C43.0832 46.7861 42.6376 46.8807 42.1876 46.875Z"
+                                        />
+                                    </svg>
+                                    <span class="menu-link-title">
+                                        Profile
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="#" class="menu-settings">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="white">
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M29.3468 5.96772V5.96774L29.6636 9.13572C29.827 10.7693 29.9087 11.586 30.4615 11.815C31.0143 12.044 31.6496 11.5242 32.9202 10.4846L35.3843 8.46857C36.05 7.92386 36.3829 7.6515 36.7677 7.67069C37.1526 7.68989 37.4567 7.99401 38.065 8.60227L41.3978 11.9351C42.0061 12.5434 42.3102 12.8475 42.3294 13.2323C42.3486 13.6172 42.0762 13.9501 41.5315 14.6158L39.5154 17.08C38.4758 18.3505 37.9561 18.9858 38.185 19.5387C38.414 20.0915 39.2308 20.1731 40.8643 20.3365L44.0324 20.6533C44.8884 20.7389 45.3163 20.7817 45.5749 21.0674C45.8334 21.3531 45.8334 21.7832 45.8334 22.6434V27.3568C45.8334 28.217 45.8334 28.6471 45.5749 28.9328C45.3163 29.2185 44.8884 29.2613 44.0324 29.3468L40.8651 29.6636C39.2316 29.8269 38.4148 29.9086 38.1858 30.4614C37.9568 31.0142 38.4766 31.6495 39.5162 32.9201L41.5316 35.3834C42.0763 36.0492 42.3487 36.3821 42.3295 36.7669C42.3103 37.1517 42.0062 37.4559 41.3979 38.0641L38.0651 41.397C37.4568 42.0052 37.1527 42.3094 36.7678 42.3285C36.383 42.3477 36.0501 42.0754 35.3844 41.5307L32.9203 39.5146C31.6497 38.475 31.0144 37.9552 30.4616 38.1842C29.9088 38.4132 29.8271 39.23 29.6637 40.8635L29.3468 44.0324C29.2613 44.8884 29.2185 45.3163 28.9328 45.5749C28.6471 45.8334 28.217 45.8334 27.3568 45.8334H22.6434C21.7832 45.8334 21.3531 45.8334 21.0674 45.5749C20.7817 45.3163 20.7389 44.8884 20.6533 44.0324L20.3365 40.8643C20.1732 39.2308 20.0915 38.414 19.5387 38.185C18.9858 37.9561 18.3506 38.4759 17.08 39.5154L14.6157 41.5316C13.95 42.0763 13.6171 42.3487 13.2323 42.3295C12.8474 42.3103 12.5433 42.0062 11.935 41.3979L8.60217 38.0651C7.99392 37.4568 7.68979 37.1527 7.6706 36.7678C7.6514 36.383 7.92376 36.0501 8.46847 35.3844L10.4846 32.9202C11.5242 31.6496 12.044 31.0143 11.815 30.4615C11.586 29.9087 10.7692 29.827 9.13571 29.6636L5.96774 29.3468H5.96772C5.1118 29.2612 4.68384 29.2185 4.4253 28.9328C4.16675 28.6471 4.16675 28.217 4.16675 27.3568V22.6434C4.16675 21.7832 4.16675 21.3531 4.4253 21.0674C4.68384 20.7817 5.1118 20.7389 5.96772 20.6533H5.96774L9.13649 20.3364C10.77 20.1731 11.5868 20.0914 11.8158 19.5386C12.0448 18.9858 11.525 18.3505 10.4854 17.0799L8.46857 14.6149C7.92386 13.9491 7.6515 13.6162 7.6707 13.2314C7.68989 12.8466 7.99402 12.5424 8.60227 11.9342L11.9351 8.60132C12.5434 7.99307 12.8475 7.68894 13.2324 7.66975C13.6172 7.65056 13.9501 7.92291 14.6158 8.46762L17.0801 10.4838C18.3506 11.5234 18.9859 12.0432 19.5388 11.8142C20.0916 11.5852 20.1732 10.7684 20.3366 9.1349L20.6533 5.96774V5.96772C20.7389 5.1118 20.7817 4.68384 21.0674 4.4253C21.3531 4.16675 21.7832 4.16675 22.6434 4.16675H27.3568C28.217 4.16675 28.6471 4.16675 28.9328 4.4253C29.2185 4.68384 29.2613 5.1118 29.3468 5.96772ZM25.0001 33.3334C29.6025 33.3334 33.3334 29.6025 33.3334 25.0001C33.3334 20.3977 29.6025 16.6667 25.0001 16.6667C20.3977 16.6667 16.6668 20.3977 16.6668 25.0001C16.6668 29.6025 20.3977 33.3334 25.0001 33.3334Z"
+                        />
+                    </svg>
+                    <span class="menu-link-title">Setting</span>
+                </a>
+            </div>
+            <header class="header">
+                <div class="container">
+                    <div class="header-wrapper">
+                        <div class="header-logo">
+                            <button class="button header-menu mobile-only">
+                                <span class="material-symbols-outlined">
+                                    menu
                                 </span>
-                            </button><img src="./assets/logo.png" alt="Profile Image" class="header-profile">
+                            </button>
+                            <h1 class="header-heading">Dashboard</h1>
+                        </div>
+                        <div class="header-options">
+                            <form class="header-search-form">
+                                <button type="button" class="header-search-close">
+                                    <span class="material-symbols-outlined">close</span>
+                                </button>
+                                <input type="text" name="search" id="header-search" class="header-search" />
+                                <button type="button" class="header-search-text">
+                                    <span class="material-symbols-outlined">
+                                        search
+                                    </span>
+                                </button>
+                            </form>
+                            <div class="header-options-end">
+                                <button class="button header-bell">
+                                    <span class="material-symbols-outlined">
+                                        notifications
+                                    </span>
+                                </button>
+                                <img src="./assets/logo.png" alt="Profile Image" class="header-profile" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <main class="main"></main>
-        <aside class="aside"></aside>
-    </div>
-    <!-- Development version -->
-    <script src="main.js"></script>
-</body>
+            </header>
+            <main class="main">
+                <div class="container">
+                    <section class="main-wrapper" data-route="1">
+                        
+                    </section>
+                </div>
+            </main>
+            <aside class="aside">
+                <div class="container">
+                    <div class="aside-wrapper">
+                        <article class="announcements">
+                            <h2 class="announcements-heading">Announcements</h2>
+                            <ul class="announcements-list">
+                                <li class="announcement">
+                                    <h3 class="announcement-heading">Project Complete.</h3>
+                                    <p class="announcement-text">Your website redesign project has been completed successfully. The new site is now live.
 
+                                    </p>
+                                </li>
+                                <li class="announcement">
+                                    <h3 class="announcement-heading">Deadline Approaching</h3>
+                                    <p class="announcement-text">Your blog post deadline is approaching. Please make sure you have a draft ready to submit by the end of the week</p>
+                                </li>
+                                <li class="announcement">
+                                    <h3 class="announcement-heading">New Milestone</h3>
+                                    <p class="announcement-text">You have reached a new milestone in your project by getting 1000 visitors to your website.
+
+                                    </p>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="online">
+                            <h2 class="online-heading">Online</h2>
+                            <ul class="online-list">
+                                <li class="online-person">
+                                    <h3 class="online-name">Bard Collymore</h3>
+                                    <p class="online-status">Playing Minecraft</p>
+                                </li>
+                                <li class="online-person">
+                                    <h3 class="online-name">Luna Adler
+                                    </h3>
+                                    <p class="online-status">Watching Netflix
+
+                                    </p>
+                                </li>
+                                <li class="online-person">
+                                    <h3 class="online-name">Ash Huxley</h3>
+                                    <p class="online-status">Listening to Music
+
+                                    </p>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <!-- Development version -->
+        <script src="main.js"></script>
+    </body>
 </html>
