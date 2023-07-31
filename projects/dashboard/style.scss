@@ -586,6 +586,8 @@ body:has(.menu[data-status="open"]) {
 .main {
     padding-block: var(--size-6);
     &-heading {
+
+       
         margin-block: var(--size-4);
 
         font-size: var(--size-6);
@@ -626,6 +628,7 @@ body:has(.menu[data-status="open"]) {
     &-heading {
         font-size: var(--size-6);
         font-weight: 700;
+
     }
     &-share {
         display: flex;

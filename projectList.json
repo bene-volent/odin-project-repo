@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "name": "Project Dashboard",
+            "link":"./projects/dashboard/",
+            "img":"/projects/dashboard/capture.png",
+            "desc":"Make your frontend development journey a success with this tool."
+        },
+        {
             "name": "Better Decor",
             "link":"./projects/signup-form/",
             "img":"./projects/signup-form/capture.png",
