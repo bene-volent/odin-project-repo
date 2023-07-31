@@ -81,11 +81,11 @@ a {
 
 // Sass
 
-$text: hsl(110, 20%, 6%);
-$background: hsl(120, 20%, 99%);
-$primary: hsl(115, 19%, 65%);
-$secondary: hsl(113, 18%, 90%);
-$accent: hsl(114, 19%, 50%);
+$text: #0d120c;
+$background: #fcfdfc;
+$primary: #98b795;
+$secondary: #e2eae1;
+$accent: #6c9867;
 
 $breakpoints: (
     xsmall: 375px,
@@ -159,6 +159,16 @@ $breakpoints: (
     --primary: #{$primary};
     --secondary: #{$secondary};
     --accent: #{$accent};
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: hsl(120, 20%, 99%);
+        --background: hsl(110, 20%, 6%);
+        --primary: hsl(115, 19%, 65%);
+        --secondary: hsl(113, 18%, 10%);
+        --accent: #6c9867;
+    }
 }
 
 body {
@@ -304,7 +314,7 @@ body:has(.menu[data-status="open"]) {
         display: flex;
         align-items: center;
 
-        color: #000;
+        color: var(--text);
     }
 
     &-search {
@@ -323,6 +333,7 @@ body:has(.menu[data-status="open"]) {
         display: none;
 
         width: calc(100vw - (2 * var(--_height)));
+        color: var(--text);
 
         @include mq(medium) {
             width: calc(100vw - 250px - (2 * var(--_height)));
@@ -454,6 +465,7 @@ body:has(.menu[data-status="open"]) {
     translate: -100% 0;
 
     transition: translate 350ms ease;
+    color: white;
 
     &-container {
         > * + * {
@@ -505,7 +517,7 @@ body:has(.menu[data-status="open"]) {
             content: "";
             position: absolute;
 
-            background-color: var(--background);
+            background-color: white;
             inset: 0 auto auto 0;
             border-bottom-right-radius: var(--size-5);
             border-top-right-radius: var(--size-5);
@@ -586,13 +598,12 @@ body:has(.menu[data-status="open"]) {
 .main {
     padding-block: var(--size-6);
     &-heading {
-
-       
         margin-block: var(--size-4);
 
         font-size: var(--size-6);
         font-weight: 700;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--text);
+        color: var(--text);
     }
 }
 
@@ -628,7 +639,6 @@ body:has(.menu[data-status="open"]) {
     &-heading {
         font-size: var(--size-6);
         font-weight: 700;
-
     }
     &-share {
         display: flex;
@@ -695,7 +705,7 @@ body:has(.menu[data-status="open"]) {
         font-size: var(--size-6);
         font-weight: 700;
 
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--text);
     }
     &-list {
         padding-block: var(--size-4);
@@ -721,7 +731,7 @@ body:has(.menu[data-status="open"]) {
         font-size: var(--size-6);
         font-weight: 700;
 
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--text);
     }
     &-list {
         padding-block: var(--size-4);
