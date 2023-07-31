@@ -1,5 +1,10 @@
 {
-    "projects": [
+    "projects": [{
+            "name": "Project Dashboard",
+            "link":"https://odinprojects-bene.vercel.app/projects/dashboard/",
+            "img":"./assets/projects/dashboard.png",
+            "desc":"Make your frontend development journey a success with this tool."
+        },
         {
             "name": "Better Decor",
             "link":"https://odinprojects-bene.vercel.app/projects/signup-form/",

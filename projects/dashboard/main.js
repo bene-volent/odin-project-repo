@@ -257,11 +257,8 @@ searchCloseBtn.addEventListener("click", () => {
 
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log(event);
-});
-
-document.body.addEventListener("click", (event) => {
-  console.log(event.target);
+  console.log(searchBar.value)
+  searchBar.value =''
 });
 
 createMainContent(1);
