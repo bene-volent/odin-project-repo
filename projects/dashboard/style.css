@@ -127,10 +127,26 @@ body {
   background: linear-gradient(45deg, #8ccc6e 0%, #078a93 71.48%);
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body:has(.menu[data-status=open]) {
+  overflow: hidden;
+}
+
 .body-wrapper {
   background: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(60.5px);
-  backdrop-filter: blur(60.5px);
+  /* Backdrop Filter Messes with Position fixed as well */
+  /* -webkit-backdrop-filter: blur(60.5px);
+   backdrop-filter: blur(60.5px); */
 }
 
 .container {
@@ -317,12 +333,15 @@ body {
   padding-left: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--size-8);
+  gap: var(--size-4);
 }
 .menu-link {
   display: flex;
   align-items: center;
   gap: var(--size-4);
+}
+.menu-link svg {
+  width: 40px;
 }
 .menu-link-title {
   font-size: var(--size-4);
