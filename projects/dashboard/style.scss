@@ -204,6 +204,8 @@ body:has(.menu[data-status="open"]) {
      backdrop-filter: blur(60.5px); */
     @include mq(medium) {
         display: grid;
+        grid-template-rows: auto 1fr;
+
         grid-template-areas:
             "menu header  "
             "menu main  "
@@ -604,6 +606,8 @@ body:has(.menu[data-status="open"]) {
     position: relative;
     overflow: hidden;
     border-radius: var(--size-2);
+
+    box-shadow: 0 var(--size-1) var(--size-1) var(--primary);
 
     &-details {
         // position:/;

@@ -158,6 +158,7 @@ body:has(.menu[data-status=open]) {
 @media (min-width: 768px) {
   .body-wrapper {
     display: grid;
+    grid-template-rows: auto 1fr;
     grid-template-areas: "menu header  " "menu main  " "menu aside";
     grid-template-columns: auto 1fr;
   }
@@ -490,6 +491,7 @@ body:has(.menu[data-status=open]) {
   position: relative;
   overflow: hidden;
   border-radius: var(--size-2);
+  box-shadow: 0 var(--size-1) var(--size-1) var(--primary);
 }
 .project-details {
   padding: var(--size-4);
