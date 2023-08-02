@@ -94,7 +94,7 @@ $accent: 90, 2%, 42%;
 $danger: 347, 90%, 96%;
 
 $dark-text: 216, 33%, 97%;
-$dark-background: 240, 20%, 1%;
+$dark-background: 240, 19%, 5%;
 $dark-primary: 219, 97%, 38%;
 $dark-secondary: 219, 30%, 9%;
 $dark-accent: 218, 30%, 49%;
@@ -497,7 +497,7 @@ body {
 
     // background-color: var(--secondary);
     border: 1px solid var(--text);
-    box-shadow: var(--size-1) var(--size-1) var(--size-2) hsla(var(--text-value), 0.2);
+    box-shadow: var(--size-1) var(--size-1) var(--size-2) hsla(var(--text-value), 0.15);
 
     font-size: var(--fs-500);
 
@@ -601,7 +601,7 @@ body {
 }
 
 .newBook {
-    position: absolute;
+    position: fixed;
     z-index: 5;
     // display: none;
     // inset: 50% 50% 0 0;
@@ -614,6 +614,7 @@ body {
     transition: scale 350ms ease;
 
     @include mq(medium) {
+        position: absolute;
         inset: auto;
         top: calc(100% - var(--size-5));
         right: 0;

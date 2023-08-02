@@ -23,7 +23,7 @@ Book.prototype.createElement = function (library) {
 
     let element = document.createElement('article')
     element.classList.add("book")
-
+    element.dataset.id = this.insertTime
     let [name, author, pages,read, remove] = [document.createElement("h3"),
                                          document.createElement("p"), 
                                          document.createElement("p"), 

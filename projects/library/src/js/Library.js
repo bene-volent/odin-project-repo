@@ -115,7 +115,7 @@ Library.prototype.RestoreData = function () {
         this.books.push(new Book(book.name, book.author, book.pages, book.read, book.insertTime, this.RemoveBook))
         insertTime = Math.max(book.insertTime, insertTime)
     }
-    this.currentID = insertTime
+    this.currentID = insertTime+1
 
     this.ReorganizeShelf()
 }

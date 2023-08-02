@@ -177,13 +177,13 @@ body[data-theme=light] {
 
 body[data-theme=dark] {
   --text: hsl(216, 33%, 97%);
-  --background: hsl(240, 20%, 1%);
+  --background: hsl(240, 19%, 5%);
   --primary: hsl(219, 97%, 38%);
   --secondary: hsl(219, 30%, 9%);
   --accent: hsl(218, 30%, 49%);
   --danger: hsl(348, 86%, 43%);
   --text-value: 216, 33%, 97%;
-  --background-value: 240, 20%, 1%;
+  --background-value: 240, 19%, 5%;
   --primary-value: 219, 97%, 38%;
   --secondary-value: 219, 30%, 9%;
   --accent-value: 218, 30%, 49%;
@@ -400,7 +400,7 @@ body {
   padding: var(--size-5);
   border-radius: var(--size-3);
   border: 1px solid var(--text);
-  box-shadow: var(--size-1) var(--size-1) var(--size-2) hsla(var(--text-value), 0.2);
+  box-shadow: var(--size-1) var(--size-1) var(--size-2) hsla(var(--text-value), 0.15);
   font-size: var(--fs-500);
 }
 @media (width > 768px) {
@@ -482,7 +482,7 @@ body {
 }
 
 .newBook {
-  position: absolute;
+  position: fixed;
   z-index: 5;
   inset: 0;
   background-color: var(--background);
@@ -490,6 +490,7 @@ body {
 }
 @media (width > 768px) {
   .newBook {
+    position: absolute;
     inset: auto;
     top: calc(100% - var(--size-5));
     right: 0;

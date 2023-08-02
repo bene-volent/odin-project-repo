@@ -123,6 +123,7 @@ addNewForm.addEventListener("submit", (event) => {
         )
 
     }
+    closeNewBookForm()
 })
 
 sortByBtn.addEventListener("click", () => {
