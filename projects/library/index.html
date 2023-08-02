@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Odin Library</title>
+	<link rel="shortcut icon" href="https://odinprojects-bene.vercel.app/assets/img/logo.png" type="image/png">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./src/css/style.css">
+
+</head>
+
+<body data-theme="light">
+	<header class="header">
+		<div class="container">
+			<div class="header--wrapper">
+				<div class="header__logo">
+					<img src="./assets/logo.png" alt="Logo" class="header__logo_img">
+					<h1 class="header__logo_title">Odin Library</h1>
+				</div>
+				<button class="header__theme button button--center">
+					<span class="material-symbols-outlined" data-light="light_mode" data-dark="dark_mode">
+						light_mode
+					</span>
+				</button>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="main__header">
+			<div class="container container--small">
+				<div class="main__header--wrapper">
+					<h2 class="main__heading">A Personal Library for your favorite books</h2>
+
+					<div class="main__buttons">
+						<button type="button" class="main__button main__clear button button--primary">Clear
+							Storage</button>
+						<div class="buttons__sort">
+							<button type="button" class="main__button button__sort--method button button--secondary"
+								data-current-sort-method="2" data-next-sort-method="1">Sorted By Name</button>
+							<button type="button" data-current-sort-direction="1" data-next-sort-direction="2"
+								class="main__button button__sort--direction button button--secondary button--center">
+								<span class="material-symbols-outlined" data-asc="arrow_upward"
+									data-desc="arrow_downward">arrow_downward</span>
+							</button>
+						</div>
+						<button type="button" class="main__addnew main__button button button--primary">
+							<span class="material-symbols-outlined">add</span>
+							<span>Add New</span>
+						</button>
+						<div class="newBook" data-active="false">
+							<button type="button" class="newBook__close mobile-only button button--primary">
+								<span class="material-symbols-outlined">
+									close
+								</span>
+							</button>
+							<h2 class="newBook__heading">New Book</h2>
+							<form class="newBook__form">
+								<div class="newBook__inputGroup">
+									<input type="text" name="bookName" class="newBook__input" required
+										placeholder="Book Name">
+									<div class="newBook__inputGroupLine"></div>
+								</div>
+								<div class="newBook__inputGroup">
+									<input type="text" name="bookAuthor" class="newBook__input" required
+										placeholder="Author Name">
+									<div class="newBook__inputGroupLine"></div>
+								</div>
+								<div class="newBook__inputGroup">
+									<input type="number" name="bookPages" min="1" class="newBook__input" required
+										placeholder="No. of Pages">
+									<div class="newBook__inputGroupLine"></div>
+
+								</div>
+								<div class="newBook__inputGroup">
+									<label for="newBook__read" class="newBook__inputLabel">Have you read it?</label>
+									<input type="checkbox" name="bookRead" id="newBook__read" class="newBook__checkbox">
+								</div>
+								<button type="submit" name="submitButton"
+									class="newBook__submit button button--primary">Add new book
+									<span class="newBook__submitError">Book Already Exists</span>
+								</button>
+
+							</form>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<dialog class="main__warning">
+			<p class="main__warning_text">Are you sure?</p>
+			<div class="main__warning_buttons">
+				<button type="button" class="main__clear-yes  button button--danger">Yes</button>
+				<button type="button" class="main__clear-no   button button--primary">No</button>
+			</div>
+		</dialog>
+
+		<section class="main__books">
+			<div class="container">
+
+				<div class="main__books--wrapper">
+					<!-- <article class="book">
+						<h3 class="book__title">Lorem, ipsum.</h3>
+						<p class="book__author">Lorem, ipsum.</p>
+						<p class="book__pages">123.</p>
+							<div class="book__read"><input type="checkbox" id="Loremipsum"><label
+									for="Loremipsum"></label></div>
+						<button type="button" class="book__button button button--danger">Remove</button>
+					</article>
+					<article class="book">
+						<h3 class="book__title">Optio, odio.</h3>
+						<p class="book__author">Ab, voluptate!</p>
+						<p class="book__pages">123.</p>
+							<div class="book__read"><input type="checkbox" id="Optioodio"><label
+									for="Optioodio"></label></div>
+						<button type="button" class="book__button button button--danger">Remove</button>
+					</article>
+					<article class="book">
+						<h3 class="book__title">Quidem, quo.</h3>
+						<p class="book__author">Tenetur, magnam.</p>
+						<p class="book__pages">123.</p>
+							<div class="book__read"><input type="checkbox" id="Quidemquo"><label
+									for="Quidemquo"></label></div>
+						<button type="button" class="book__button button button--danger	">Remove</button>
+					</article> -->
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<script type="module" src="./src/js/script.js"></script>
+</body>
+
+</html>

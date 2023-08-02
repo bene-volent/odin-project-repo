@@ -1,5 +1,10 @@
 {
-    "projects": [
+    "projects": [{
+            "name": "Odin Library",
+            "link":"./projects/library/",
+            "img":"/projects/library/capture.png",
+            "desc":"A Personal Library for your favorite books."
+        },
         {
             "name": "Project Dashboard",
             "link":"./projects/dashboard/",
