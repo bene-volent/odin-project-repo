@@ -139,13 +139,9 @@ const gameWindow = {
     gameOverOpen: false
 }
 
-start.video.addEventListener("loadeddata", () => {
 
-    setTimeout(() => {
-        header.classList.remove("loading");
-    }, 500)
 
-});
+
 
 start.human.addEventListener('click', () => {
 
@@ -331,8 +327,12 @@ function closeRoundModal() {
 gameWindow.roundOverClose.addEventListener("click", closeRoundModal)
 gameWindow.roundOverContinue.addEventListener("click", continueRoundModal)
 
-document.body.addEventListener("click",()=>{
-    if (gameWindow.gameOverOpen){
-        gameWindow.gameOver.close() 
+document.body.addEventListener("click", () => {
+    if (gameWindow.gameOverOpen) {
+        gameWindow.gameOver.close()
     }
 })
+
+setTimeout(() => {
+    header.classList.remove("loading");
+}, 1000)
