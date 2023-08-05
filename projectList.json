@@ -1,5 +1,11 @@
 {
-    "projects": [{
+    "projects": [
+        {
+            "name": "Tic Tac Toe",
+            "link":"./projects/tic-tac-toe/",
+            "img":"./projects/tic-tac-toe/capture.png",
+            "desc":"Play your favorite childhood game."
+        },{
             "name": "Odin Library",
             "link":"./projects/library/",
             "img":"./projects/library/capture.png",
