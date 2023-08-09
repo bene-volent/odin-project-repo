@@ -1,56 +1,61 @@
 {
-    "projects": [
+    "projects": [{
+            "name": "Bene's Bistro",
+            "link": "./projects/benes-bistro/",
+            "img": "./projects/benes-bistro/capture.png",
+            "desc": "Explore the World of Asia."
+        },
         {
             "name": "Tic Tac Toe",
-            "link":"./projects/tic-tac-toe/",
-            "img":"./projects/tic-tac-toe/capture.png",
-            "desc":"Play your favorite childhood game."
-        },{
+            "link": "./projects/tic-tac-toe/",
+            "img": "./projects/tic-tac-toe/capture.png",
+            "desc": "Play your favorite childhood game."
+        }, {
             "name": "Odin Library",
-            "link":"./projects/library/",
-            "img":"./projects/library/capture.png",
-            "desc":"A Personal Library for your favorite books."
+            "link": "./projects/library/",
+            "img": "./projects/library/capture.png",
+            "desc": "A Personal Library for your favorite books."
         },
         {
             "name": "Project Dashboard",
-            "link":"./projects/dashboard/",
-            "img":"./projects/dashboard/capture.png",
-            "desc":"Make your frontend development journey a success with this tool."
+            "link": "./projects/dashboard/",
+            "img": "./projects/dashboard/capture.png",
+            "desc": "Make your frontend development journey a success with this tool."
         },
         {
             "name": "Better Decor",
-            "link":"./projects/signup-form/",
-            "img":"./projects/signup-form/capture.png",
-            "desc":"Make your home your sanctuary."
+            "link": "./projects/signup-form/",
+            "img": "./projects/signup-form/capture.png",
+            "desc": "Make your home your sanctuary."
         },
         {
             "name": "Calculator",
-            "link":"./projects/calculator/",
-            "img":"./projects/calculator/capture.png",
-            "desc":"The simple, yet powerful tool for your everyday calculations."
+            "link": "./projects/calculator/",
+            "img": "./projects/calculator/capture.png",
+            "desc": "The simple, yet powerful tool for your everyday calculations."
         },
         {
             "name": "Etch A Sketch",
-            "link":"./projects/etch-a-sketch/",
-            "img":"./projects/etch-a-sketch/capture.png",
-            "desc":"A Pixel Sketch app to bring you imagination to life."
+            "link": "./projects/etch-a-sketch/",
+            "img": "./projects/etch-a-sketch/capture.png",
+            "desc": "A Pixel Sketch app to bring you imagination to life."
         },
         {
             "name": "Rock Paper Scissors",
-            "link":"./projects/rock-paper-scissors/",
-            "img":"./projects/rock-paper-scissors/capture.png",
-            "desc":"A game of Rock Paper Scissors | Design by Frontend Mentor."
-        },{
+            "link": "./projects/rock-paper-scissors/",
+            "img": "./projects/rock-paper-scissors/capture.png",
+            "desc": "A game of Rock Paper Scissors | Design by Frontend Mentor."
+        }, {
             "name": "The Capybara Team",
-            "link":"./projects/capybara-portfolio/",
-            "img":"./projects/capybara-portfolio/capture.png",
-            "desc":"A team of capybaras who love to create."
+            "link": "./projects/capybara-portfolio/",
+            "img": "./projects/capybara-portfolio/capture.png",
+            "desc": "A team of capybaras who love to create."
         },
         {
             "name": "Odin Recipes",
-            "link":"./projects/odin-recipes/",
-            "img":"./projects/odin-recipes/capture.png",
-            "desc":"A small project to show to power of HTML"
+            "link": "./projects/odin-recipes/",
+            "img": "./projects/odin-recipes/capture.png",
+            "desc": "A small project to show to power of HTML"
         }
     ]
 }
