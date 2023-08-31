@@ -1,5 +1,12 @@
 {
-    "projects": [{
+    "projects": [
+        {
+            "name": "Bene's Todo List",
+            "link": "./projects/benes-todolist/",
+            "img": "./projects/benes-todolist/capture.png",
+            "desc": "A Todo List to keep a track of all your works."
+        }
+        ,{
             "name": "Bene's Bistro",
             "link": "./projects/benes-bistro/",
             "img": "./projects/benes-bistro/capture.png",
