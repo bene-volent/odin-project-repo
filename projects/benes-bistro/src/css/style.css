@@ -133,7 +133,7 @@ body {
   overflow-x: hidden;
 }
 
-#root[data-route="1"] {
+#root{
   background-image: url("../../assets/homeBackground.svg");
   background-position: bottom;
   background-repeat: no-repeat;
