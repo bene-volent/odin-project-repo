@@ -91,7 +91,9 @@ searchLocationBar.addEventListener("keydown", (event) => {
                     return
                 }
 
-                updateUI(data).then(_ => prevLocation = location)
+                updateUI(data).then(_ => {prevLocation = location
+searchLocationBar.value=""
+})
             })
         }
     }
