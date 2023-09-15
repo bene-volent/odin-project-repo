@@ -31,6 +31,15 @@ function updateCurrentWeather(name, country, values) {
     HumidityValue.textContent = values.humidity
     WindDirectionValue.textContent = values.wind_deg
     WindSpeedValue.textContent = values.windspeed
+
+
+    let hour = parseInt(values.date.time.slice(0, 2))
+    if (hour > 7 && hour < 20) {
+        document.body.dataset.time = 'day'
+    }
+    else {
+        document.body.dataset.time = 'night'
+    }
 }
 
 
@@ -91,7 +100,7 @@ searchLocationBar.addEventListener("keydown", (event) => {
                     return
                 }
 
-                updateUI(data).then(_ => prevLocation = location)
+                updateUI(data).then(_ => { prevLocation = location; searchLocationBar.value = '' })
             })
         }
     }

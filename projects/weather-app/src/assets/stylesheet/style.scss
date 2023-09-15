@@ -115,10 +115,24 @@ html {
 }
 
 @mixin card {
-    background-color: hsl(0deg, 0%, 100%, 0.3);
+    background-color: #12284f;
+    @include time("day") {
+        background-color: hsl(0 0% 100%);
+
+        @include mq() {
+            background-color: hsl(0 0% 100% / 0.2);
+        }
+    }
+
     border-radius: 0.5rem;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+}
+
+@mixin time($time) {
+    body[data-time="#{$time}"] & {
+        @content;
+    }
 }
 
 // css
@@ -175,15 +189,23 @@ body {
         "Open Sans",
         "Helvetica Neue",
         sans-serif;
-    background: linear-gradient(#1e5072 40%, #666);
 
-    @include mq(){
-    background: linear-gradient(90deg, #1e5072 40%, #666);
-        
-
-    }
     color: #efefef;
 
+    &[data-time="day"] {
+        background: linear-gradient(#5391da 30%, #eee 50%);
+
+        @include mq() {
+            background: #5391da;
+            color: #151515;
+        }
+    }
+    &[data-time="night"] {
+        background: linear-gradient(hsl(219, 65%, 15%) 40%, #0b1a33);
+        @include mq() {
+            background-color: #0b1a33;
+        }
+    }
 }
 
 .container {
@@ -225,54 +247,147 @@ main {
         justify-content: space-evenly;
         align-items: stretch;
         flex-direction: column;
-        gap: var(--size-2)  ;
+        gap: var(--size-2);
 
-        @include mq(){
+        @include mq() {
             flex-direction: row;
             align-items: center;
         }
     }
 
-    .search-location{
+    .search-location {
         position: relative;
 
-        --icon-width:var(--size-5);
+        --icon-width: var(--size-5);
         max-width: 500px;
         margin-inline: auto;
 
-        @include mq(){
+        @include mq() {
             margin-inline: 0;
         }
-        input{
+        input {
             width: 100%;
             border: 0;
             outline: none;
+
             border-bottom: 1px solid #efefef;
+            @include time("day") {
+                @include mq()   {border-bottom: 1px solid #151515;}
+            }
             padding-right: calc(var(--icon-width) + 1ch);
             background-color: transparent;
 
-            &::-webkit-input-placeholder{
-                opacity: 0.8;
-                color: #fff;
+            
+           
+
+            
+           
+
+            
+           
+
+            
+            &::-webkit-input-placeholder {
+                color:#efefef;
+                @include time("day") {
+                    @include mq(){
+
+                        color: #151515;
+                    }
+
+                    
+                }
             }
 
-            &::-moz-placeholder{
-                color: #fff;
+            
+           
+
+            
+           
+
+            
+           
+
+            
+            &::-moz-placeholder {
+                color:#efefef;
+                @include time("day") {
+                    @include mq(){
+
+                        color: #151515;
+                    }
+
+                    
+                }
             }
 
-            &:-ms-input-placeholder{
-                color: #fff;
+            
+           
+
+            
+           
+
+            
+           
+
+            
+            &:-ms-input-placeholder {
+                color:#efefef;
+                @include time("day") {
+                    @include mq(){
+
+                        color: #151515;
+                    }
+
+                    
+                }
             }
 
-            &::-ms-input-placeholder{
-                color: #fff;
+            
+           
+
+            
+           
+
+            
+           
+
+            
+            &::-ms-input-placeholder {
+                color:#efefef;
+                @include time("day") {
+                    @include mq(){
+
+                        color: #151515;
+                    }
+
+                    
+                }
             }
 
-            &::placeholder{
-                color: #fff;
+            
+           
+
+            
+           
+
+            
+           
+
+            
+            &::placeholder {
+                color:#efefef;
+                @include time("day") {
+                    @include mq(){
+
+                        color: #151515;
+                    }
+
+                    
+                }
             }
         }
-        svg{
+        svg {
             position: absolute;
             right: 0;
             top: 50%;
@@ -319,6 +434,8 @@ main {
 
             &-value {
                 font-size: 0.85em;
+                font-weight: bold;
+                margin-top: 0.25em;
             }
 
             svg {
@@ -333,6 +450,12 @@ main {
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
             padding: var(--size-4);
+            @include time("day") {
+                color: #151515;
+
+                @include mq() {
+                }
+            }
         }
         &-name {
             font-size: var(--size-6);
@@ -346,7 +469,7 @@ main {
     display: flex;
 }
 .temp {
-    font-size: var(--size-30);
+    font-size: clamp(var(--size-20), 15vw, var(--size-30));
     line-height: 0.95;
 
     &-icon {
@@ -357,9 +480,12 @@ main {
 .forecast {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     gap: 1rem;
-    color: black;
+
+    @include time("day") {
+        color: #151515;
+    }
 }
 
 .hourly {
@@ -393,7 +519,6 @@ main {
 
         &::-webkit-scrollbar-track {
             background: inherit;
-            
         }
     }
     &-time {

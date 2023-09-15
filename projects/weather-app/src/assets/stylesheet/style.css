@@ -144,12 +144,23 @@ html {
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: linear-gradient(#1e5072 40%, #666);
   color: #efefef;
 }
+body[data-time=day] {
+  background: linear-gradient(#5391da 30%, #eee 50%);
+}
 @media (width > 900px) {
-  body {
-    background: linear-gradient(90deg, #1e5072 40%, #666);
+  body[data-time=day] {
+    background: #5391da;
+    color: #151515;
+  }
+}
+body[data-time=night] {
+  background: linear-gradient(hsl(219, 65%, 15%) 40%, #0b1a33);
+}
+@media (width > 900px) {
+  body[data-time=night] {
+    background-color: #0b1a33;
   }
 }
 
@@ -197,7 +208,7 @@ main .wrapper {
 }
 .header .search-location {
   position: relative;
-  --icon-width:var(--size-5);
+  --icon-width: var(--size-5);
   max-width: 500px;
   margin-inline: auto;
 }
@@ -214,21 +225,50 @@ main .wrapper {
   padding-right: calc(var(--icon-width) + 1ch);
   background-color: transparent;
 }
+@media (width > 900px) {
+  body[data-time=day] .header .search-location input {
+    border-bottom: 1px solid #151515;
+  }
+}
 .header .search-location input::-webkit-input-placeholder {
-  opacity: 0.8;
-  color: #fff;
+  color: #efefef;
+}
+@media (width > 900px) {
+  body[data-time=day] .header .search-location input::-webkit-input-placeholder {
+    color: #151515;
+  }
 }
 .header .search-location input::-moz-placeholder {
-  color: #fff;
+  color: #efefef;
+}
+@media (width > 900px) {
+  body[data-time=day] .header .search-location input::-moz-placeholder {
+    color: #151515;
+  }
 }
 .header .search-location input:-ms-input-placeholder {
-  color: #fff;
+  color: #efefef;
+}
+@media (width > 900px) {
+  body[data-time=day] .header .search-location input:-ms-input-placeholder {
+    color: #151515;
+  }
 }
 .header .search-location input::-ms-input-placeholder {
-  color: #fff;
+  color: #efefef;
+}
+@media (width > 900px) {
+  body[data-time=day] .header .search-location input::-ms-input-placeholder {
+    color: #151515;
+  }
 }
 .header .search-location input::placeholder {
-  color: #fff;
+  color: #efefef;
+}
+@media (width > 900px) {
+  body[data-time=day] .header .search-location input::placeholder {
+    color: #151515;
+  }
 }
 .header .search-location svg {
   position: absolute;
@@ -274,6 +314,8 @@ main .wrapper {
 }
 .weather-today .location-condition-value {
   font-size: 0.85em;
+  font-weight: bold;
+  margin-top: 0.25em;
 }
 .weather-today .location-condition svg {
   font-size: var(--size-8);
@@ -287,6 +329,9 @@ main .wrapper {
   gap: 1rem;
   padding: var(--size-4);
 }
+body[data-time=day] .weather-today .location-conditions {
+  color: #151515;
+}
 .weather-today .location-name {
   font-size: var(--size-6);
 }
@@ -299,7 +344,7 @@ main .wrapper {
 }
 
 .temp {
-  font-size: var(--size-30);
+  font-size: clamp(var(--size-20), 15vw, var(--size-30));
   line-height: 0.95;
 }
 .temp-icon {
@@ -309,17 +354,27 @@ main .wrapper {
 .forecast {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   gap: 1rem;
-  color: black;
+}
+body[data-time=day] .forecast {
+  color: #151515;
 }
 
 .hourly {
   padding: var(--size-4) var(--size-8);
-  background-color: hsla(0, 0%, 100%, 0.3);
+  background-color: #12284f;
   border-radius: 0.5rem;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
+}
+body[data-time=day] .hourly {
+  background-color: hsl(0, 0%, 100%);
+}
+@media (width > 900px) {
+  body[data-time=day] .hourly {
+    background-color: hsla(0, 0%, 100%, 0.2);
+  }
 }
 .hourly-heading {
   font-size: var(--size-5);
@@ -364,7 +419,7 @@ main .wrapper {
 .daily {
   padding: var(--size-4) var(--size-8);
   margin-bottom: var(--size-8);
-  background-color: hsla(0, 0%, 100%, 0.3);
+  background-color: #12284f;
   border-radius: 0.5rem;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
@@ -372,6 +427,14 @@ main .wrapper {
 @media (width > 900px) {
   .daily {
     margin-bottom: 0;
+  }
+}
+body[data-time=day] .daily {
+  background-color: hsl(0, 0%, 100%);
+}
+@media (width > 900px) {
+  body[data-time=day] .daily {
+    background-color: hsla(0, 0%, 100%, 0.2);
   }
 }
 .daily-heading {
