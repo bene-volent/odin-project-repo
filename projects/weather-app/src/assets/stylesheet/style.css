@@ -291,7 +291,7 @@ main .wrapper {
 }
 .weather-today .location-details {
   padding: var(--size-8) var(--size-4);
-  min-height: 50vh;
+  min-height: 35vh;
   display: grid;
   place-content: center;
 }
