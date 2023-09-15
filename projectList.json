@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "name": "Bene's Weather App",
+            "link": "./projects/weather-app/",
+            "img": "./projects/weather-app/capture.png",
+            "desc": "A weather app that makes your travels easier with hourly and 7 days forecast."
+        }
+        ,
+        {
             "name": "Bene's Todo List",
             "link": "./projects/benes-todolist/",
             "img": "./projects/benes-todolist/capture.png",
