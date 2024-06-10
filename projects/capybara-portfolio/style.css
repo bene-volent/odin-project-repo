@@ -211,7 +211,6 @@ body{
 .team{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     gap: 1rem;
 
     /* flex-wrap: wrap; */
@@ -228,6 +227,12 @@ body{
     text-align: center;
 }
 
+.team__member_details{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
 .team__member_image{
     border-radius: 45px;
     border: 10px solid var(--clr-border);
