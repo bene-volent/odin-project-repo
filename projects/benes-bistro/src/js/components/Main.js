@@ -8,35 +8,35 @@ export default function Main() {
 
     const mainWrapper = createElement("div", 'main__wrapper')
 
-
-
-    const home = Home()
-    const menu = Menu()
-    const contacts = Contacts()
+    
 
     const root = query("#root")
 
     const navLinks = queryAll(".header__navLink")
 
-    let currentWindow = home
+    let currentWindow = Home()
 
     navLinks.forEach(navLink => {
         addClickListener(navLink, () => {
             root.dataset.route = navLink.dataset.link
             console.log(parseInt(navLink.dataset.link))
+
+            console.log(window.location.href)
             switch (parseInt(navLink.dataset.link)) {
 
                 case 2:
-
-                    showRoute(main, menu, currentWindow)
+                    const menu = Menu()
+                    showRoute(main,menu , currentWindow)
                     currentWindow = menu
                     break;
                 case 3:
+                    const contacts = Contacts()
                     showRoute(main, contacts, currentWindow)
                     currentWindow = contacts
                     break;
 
                 default:
+                    const home = Home()
                     showRoute(main, home, currentWindow)
                     currentWindow = home
                     break;
@@ -46,7 +46,7 @@ export default function Main() {
     })
 
 
-    main.appendChild(home)
+    main.appendChild(currentWindow)
 
     return main
 
@@ -56,11 +56,9 @@ export default function Main() {
 export function showRoute(main, route, currentWindow) {
 
 
-   
-
     setTimeout(
         () => {
-            main.innerHTML = ''
+            removeAllChildren(main)
             main.appendChild(route)
 
 

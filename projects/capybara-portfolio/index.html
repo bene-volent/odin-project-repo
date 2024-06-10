@@ -18,7 +18,7 @@
             <p>I wanted to follow the course and use minimum css that is not taught until now.</p>
         </div>
         <p>Press the <strong>Button</strong> or press <strong>Esc</strong> to close the modal</p>
-        <button class="btn" onclick="modal.close()">Close</button>
+        <button class="btn" >Close</button>
     </dialog>
     <main>
         <section class="hero-section" id="main">
@@ -93,8 +93,10 @@
     <footer><span>&copy; Copyright. <a href="https://github.com/bene-volent" target="_blank">Bene-volent</a> 2023</span>
     </footer>
     <script>
-        const modal = document.querySelector("dialog")
+        const modal = document.querySelector(".modal")
+        const modalButton = document.querySelector(".modal .btn")
         modal.showModal()
+        modalButton.addEventListener('click',()=>modal.close())
     </script>
 </body>
 
