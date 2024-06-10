@@ -175,6 +175,7 @@ body{
     display: inline-block;
     /* width: 100%; */
     left: 50%;
+    bottom:3rem;
     /* text-align: center; */
 
     animation:hero-downarrow 3s ease-in-out infinite;
